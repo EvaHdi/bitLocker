@@ -1,0 +1,34 @@
+2025-03-02 21:51:11,323 [INFO] 程序已以管理员权限运行。
+2025-03-02 21:51:11,324 [INFO] new volume
+2025-03-02 21:51:31,698 [INFO] Scanning for Opal compliant disks
+\\.\PhysicalDrive0  2      RSYE3839S-480G                           SP301010
+\\.\PhysicalDrive1 No       
+No more disks present ending scan
+2025-03-02 21:51:31,698 [INFO] step 1: status check
+2025-03-02 21:51:31,755 [INFO] BitLocker 驱动器加密: 配置工具版本 10.0.19041
+版权所有 (C) 2013 Microsoft Corporation。保留所有权利。
+
+卷 D: []
+[数据卷]
+
+    大小:              447.12 GB
+    BitLocker 版本:    无
+    转换状态:          完全解密
+    已加密百分比:      0.0%
+    加密方法:          无
+    保护状态:          保护关闭
+    锁定状态:          已解锁
+    标识字段:          无
+    自动解锁:          已禁用
+    密钥保护器:        找不到
+2025-03-02 21:51:31,756 [INFO] disk_current_status : {'BitLocker 驱动器加密': '配置工具版本 10.0.19041', '卷 D': '[]', '大小': '447.12 GB', 'BitLocker 版本': '无', '转换状态': '完全解密', '已加密百分比': '0.0%', '加密方法': '无', '保护状态': '保护关闭', '锁定状态': '已解锁', '标识字段': '无', '自动解锁': '已禁用', '密钥保护器': '找不到'}
+2025-03-02 21:51:31,757 [INFO] step 2: bitlocker on
+2025-03-02 21:51:46,304 [INFO] key: {password}
+2025-03-02 21:51:47,380 [INFO] disk_current_status : {'BitLocker 驱动器加密': '配置工具版本 10.0.19041', '卷 D': '[]', '大小': '447.12 GB', 'BitLocker 版本': '无', '转换状态': '完全解密', '已加密百分比': '0.0%', '加密方法': '无', '保护状态': '保护关闭', '锁定状态': '已解锁', '标识字段': '无', '自动解锁': '已禁用', '密钥保护器': '找不到'}
+2025-03-02 21:51:47,380 [INFO] step 3: bitlocker add password
+2025-03-02 21:51:53,289 [INFO] step 4: bitlocker change password
+2025-03-02 21:52:00,185 [INFO] step 5: bitlocker lock
+2025-03-02 21:52:01,869 [INFO] BitLocker 驱动器加密: 配置工具版本 10.0.19041
+版权所有 (C) 2013 Microsoft Corporation。保留所有权利。
+
+卷 D: 现在已锁定

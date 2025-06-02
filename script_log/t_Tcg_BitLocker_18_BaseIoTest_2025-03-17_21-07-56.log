@@ -1,0 +1,37 @@
+2025-03-17 21:07:56,240 [INFO] 程序已以管理员权限运行。
+2025-03-17 21:07:56,240 [INFO] new volume
+2025-03-17 21:08:16,588 [INFO] Scanning for Opal compliant disks
+\\.\PhysicalDrive0  2      RSYE3839Z-960G                           SP301012
+\\.\PhysicalDrive1 No       
+No more disks present ending scan
+2025-03-17 21:08:16,589 [INFO] step 1: status check
+2025-03-17 21:08:16,634 [INFO] BitLocker 驱动器加密: 配置工具版本 10.0.19041
+版权所有 (C) 2013 Microsoft Corporation。保留所有权利。
+
+卷 D: []
+[数据卷]
+
+    大小:              894.24 GB
+    BitLocker 版本:    无
+    转换状态:          完全解密
+    已加密百分比:      0.0%
+    加密方法:          无
+    保护状态:          保护关闭
+    锁定状态:          已解锁
+    标识字段:          无
+    自动解锁:          已禁用
+    密钥保护器:        找不到
+2025-03-17 21:08:16,635 [INFO] disk_current_status : {'BitLocker 驱动器加密': '配置工具版本 10.0.19041', '卷 D': '[]', '大小': '894.24 GB', 'BitLocker 版本': '无', '转换状态': '完全解密', '已加密百分比': '0.0%', '加密方法': '无', '保护状态': '保护关闭', '锁定状态': '已解锁', '标识字段': '无', '自动解锁': '已禁用', '密钥保护器': '找不到'}
+2025-03-17 21:08:16,635 [INFO] FIO read write
+2025-03-17 21:08:16,635 [INFO] Running command: fio.exe --name=seqwrite --rw=write --bs=128k --size=10G --directory=D\:\fio_test --filename=testfile --iodepth=1 --output=fio_log\seqwrite.log
+2025-03-17 21:08:32,465 [INFO] Sequential write completed successfully.
+2025-03-17 21:08:32,466 [INFO] step 2: bitlocker on
+2025-03-17 21:08:47,556 [INFO] key: {password}
+2025-03-17 21:08:48,636 [INFO] disk_current_status : {'BitLocker 驱动器加密': '配置工具版本 10.0.19041', '卷 D': '[]', '大小': '894.24 GB', 'BitLocker 版本': '无', '转换状态': '完全解密', '已加密百分比': '0.0%', '加密方法': '无', '保护状态': '保护关闭', '锁定状态': '已解锁', '标识字段': '无', '自动解锁': '已禁用', '密钥保护器': '找不到'}
+2025-03-17 21:08:48,636 [INFO] step 3: bitlocker add password
+2025-03-17 21:08:54,577 [INFO] step 4: bitlocker change password
+2025-03-17 21:09:01,446 [INFO] step 5: bitlocker lock
+2025-03-17 21:09:05,334 [INFO] BitLocker 驱动器加密: 配置工具版本 10.0.19041
+版权所有 (C) 2013 Microsoft Corporation。保留所有权利。
+
+卷 D: 现在已锁定

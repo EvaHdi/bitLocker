@@ -1,0 +1,68 @@
+2025-03-17 17:09:24,606 [INFO] 程序已以管理员权限运行。
+2025-03-17 17:09:24,606 [INFO] step 3: delay power off
+2025-03-17 17:09:24,606 [INFO] step 4: bitlocker unlock
+2025-03-17 17:09:28,051 [INFO] current_locked_state : 已解锁
+2025-03-17 17:09:28,051 [INFO] 识盘命令输出：
+2025-03-17 17:09:28,141 [INFO] smart_log : 
+2025-03-17 17:09:29,152 [INFO] 识盘命令输出：
+2025-03-17 17:09:29,253 [INFO] smart_log : 
+2025-03-17 17:09:30,268 [INFO] 识盘命令输出：
+2025-03-17 17:09:30,363 [INFO] smart_log : 
+2025-03-17 17:09:31,378 [INFO] 识盘命令输出：
+2025-03-17 17:09:31,491 [INFO] smart_log : 
+2025-03-17 17:09:32,505 [INFO] 识盘命令输出：
+2025-03-17 17:09:32,611 [INFO] smart_log : 
+2025-03-17 17:09:33,620 [INFO] 识盘命令输出：
+2025-03-17 17:09:33,730 [INFO] smart_log : 
+2025-03-17 17:09:34,740 [INFO] 识盘命令输出：
+2025-03-17 17:09:34,859 [INFO] smart_log : 
+2025-03-17 17:09:35,873 [INFO] 识盘命令输出：
+2025-03-17 17:09:35,977 [INFO] smart_log : 
+2025-03-17 17:09:36,977 [INFO] 识盘命令输出：
+2025-03-17 17:09:37,077 [INFO] smart_log : 
+2025-03-17 17:09:38,080 [INFO] 识盘命令输出：
+2025-03-17 17:09:38,197 [INFO] smart_log : 
+2025-03-17 17:09:39,199 [INFO] 识盘命令输出：
+2025-03-17 17:09:39,288 [INFO] smart_log : 
+2025-03-17 17:09:40,294 [INFO] 识盘命令输出：
+2025-03-17 17:09:40,410 [INFO] smart_log : 
+2025-03-17 17:09:41,421 [INFO] 识盘命令输出：
+2025-03-17 17:09:41,521 [INFO] smart_log : 
+2025-03-17 17:09:42,525 [INFO] 识盘命令输出：
+2025-03-17 17:09:42,627 [INFO] smart_log : 
+2025-03-17 17:09:43,642 [INFO] 识盘命令输出：
+2025-03-17 17:09:43,741 [INFO] smart_log : 
+2025-03-17 17:09:44,743 [INFO] 识盘命令输出：
+2025-03-17 17:09:44,844 [INFO] smart_log : 
+2025-03-17 17:09:45,855 [INFO] 识盘命令输出：
+2025-03-17 17:09:45,950 [INFO] smart_log : 
+2025-03-17 17:09:46,956 [INFO] 识盘命令输出：
+2025-03-17 17:09:47,080 [INFO] smart_log : 
+2025-03-17 17:09:48,085 [INFO] 识盘命令输出：
+2025-03-17 17:09:48,205 [INFO] smart_log : 
+2025-03-17 17:09:49,220 [INFO] 识盘命令输出：
+2025-03-17 17:09:49,322 [INFO] smart_log : 
+2025-03-17 17:09:50,337 [INFO] 识盘命令输出：
+2025-03-17 17:09:50,427 [INFO] smart_log : 
+2025-03-17 17:09:51,438 [INFO] 识盘命令输出：
+2025-03-17 17:09:51,531 [INFO] smart_log : 
+2025-03-17 17:09:52,543 [INFO] 识盘命令输出：
+2025-03-17 17:09:52,646 [INFO] smart_log : 
+2025-03-17 17:09:53,660 [INFO] 识盘命令输出：
+2025-03-17 17:09:53,764 [INFO] smart_log : 
+2025-03-17 17:09:54,779 [INFO] 识盘命令输出：
+2025-03-17 17:09:54,875 [INFO] smart_log : 
+2025-03-17 17:09:55,882 [INFO] 识盘命令输出：
+2025-03-17 17:09:55,987 [INFO] smart_log : 
+2025-03-17 17:09:56,999 [INFO] 识盘命令输出：
+2025-03-17 17:09:57,113 [INFO] smart_log : 
+2025-03-17 17:09:58,127 [INFO] 等待5秒后开始上电
+2025-03-17 17:10:03,148 [ERROR] 详细错误信息：
+Traceback (most recent call last):
+  File "t_Tcg_BitLocker_10_UnlockAPL.py", line 135, in Run
+    self.apl_lib.power_on(port=port)
+  File "C:\Users\Administrator\Desktop\bitlockerTest\lib\lib_apl.py", line 59, in power_on
+    ser.open()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\site-packages\serial\serialwin32.py", line 64, in open
+    raise SerialException("could not open port {!r}: {!r}".format(self.portstr, ctypes.WinError()))
+serial.serialutil.SerialException: could not open port 'COM4': PermissionError(13, '拒绝访问。', None, 5)

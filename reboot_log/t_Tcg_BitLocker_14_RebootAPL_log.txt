@@ -1,0 +1,104 @@
+C:\Users\ESSD\AppData\Local\Programs\Python\Python38\python.exe: can't open file 'C:\Users\Administrator\Desktop\code\bitlockerTest\t_Tcg_BitLocker_14_RebootAPL.py': [Errno 2] No such file or directory
+2025-01-07 14:42:03,918 [INFO] 程序已以管理员权限运行。
+2025-01-07 14:42:03,919 [INFO] [INFO] Detected post-reboot. Reboot finish...
+2025-01-07 14:42:03,937 [INFO] [INFO] Task deleted.
+2025-01-07 14:42:03,938 [INFO] [INFO] Workflow completed successfully.
+2025-01-07 14:42:03,938 [INFO] step 2: delay power off
+2025-01-07 14:42:03,938 [ERROR] 发生异常 : 'RebootAPL' object has no attribute 'lib'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\code\bitlockerTest\test_case\t_Tcg_BitLocker_14_RebootAPL.py", line 166, in Run
+    self.lib.delay_poweroff(delay_seconds=delay_seconds, port=port)
+AttributeError: 'RebootAPL' object has no attribute 'lib'
+2025-01-07 14:42:03,938 [INFO] 流程完成。
+2025-01-07 14:48:53,973 [INFO] 程序已以管理员权限运行。
+2025-01-07 14:48:53,974 [INFO] [INFO] Detected post-reboot. Reboot finish...
+2025-01-07 14:48:53,991 [INFO] [INFO] Task deleted.
+2025-01-07 14:48:53,992 [INFO] [INFO] Workflow completed successfully.
+2025-01-07 14:48:53,992 [INFO] step 2: delay power off
+2025-01-07 14:48:53,992 [INFO] 识盘命令输出：
+2025-01-07 14:48:54,000 [INFO] smart_log : 错误代码 1: 系统找不到指定的路径。
+2025-01-07 14:48:55,015 [INFO] 识盘命令输出：
+2025-01-07 14:48:55,024 [INFO] smart_log : 错误代码 1: 系统找不到指定的路径。
+2025-01-07 14:48:56,024 [INFO] 识盘命令输出：
+2025-01-07 14:48:56,034 [INFO] smart_log : 错误代码 1: 系统找不到指定的路径。
+2025-01-07 14:48:57,037 [INFO] 识盘命令输出：
+2025-01-07 14:48:57,046 [INFO] smart_log : 错误代码 1: 系统找不到指定的路径。
+2025-01-07 14:48:58,058 [INFO] 识盘命令输出：
+2025-01-07 14:48:58,067 [INFO] smart_log : 错误代码 1: 系统找不到指定的路径。
+2025-01-07 14:48:59,073 [INFO] 识盘命令输出：
+2025-01-07 14:48:59,083 [INFO] smart_log : 错误代码 1: 系统找不到指定的路径。
+2025-01-07 14:49:00,090 [INFO] 识盘命令输出：
+2025-01-07 14:49:00,100 [INFO] smart_log : 错误代码 1: 系统找不到指定的路径。
+2025-01-07 14:49:01,113 [INFO] 识盘命令输出：
+2025-01-07 14:49:01,123 [INFO] smart_log : 错误代码 1: 系统找不到指定的路径。
+2025-01-07 14:49:02,129 [INFO] 识盘命令输出：
+2025-01-07 14:49:02,139 [INFO] smart_log : 错误代码 1: 系统找不到指定的路径。
+2025-01-07 14:49:03,143 [INFO] 识盘命令输出：
+2025-01-07 14:49:03,153 [INFO] smart_log : 错误代码 1: 系统找不到指定的路径。
+2025-01-07 14:49:04,158 [INFO] 等待5秒后开始上电
+2025-01-07 14:49:19,837 [INFO] 流程完成。
+计时开始，2s后开始掉电
+
+command : smartctl.exe -a /dev/sda > ..\smartcli_log\all.txt
+command : smartctl.exe -a /dev/sda > ..\smartcli_log\all.txt
+command : smartctl.exe -a /dev/sda > ..\smartcli_log\all.txt
+执行掉电
+send cmd is: aa 55 00 e5 01 00 00 00 00 00 00 00 00 00 55 aa c8 f7 21 64 00 
+command : smartctl.exe -a /dev/sda > ..\smartcli_log\all.txt
+command : smartctl.exe -a /dev/sda > ..\smartcli_log\all.txt
+command : smartctl.exe -a /dev/sda > ..\smartcli_log\all.txt
+command : smartctl.exe -a /dev/sda > ..\smartcli_log\all.txt
+command : smartctl.exe -a /dev/sda > ..\smartcli_log\all.txt
+command : smartctl.exe -a /dev/sda > ..\smartcli_log\all.txt
+command : smartctl.exe -a /dev/sda > ..\smartcli_log\all.txt
+rece cmd is: aa 55 01 e5 01 00 00 00 00 00 00 00 00 00 55 aa 55 f8 c0 12 
+power off cmd send succeed, and serial port COM4 close succeed!
+send cmd is: aa 55 00 e5 00 00 00 00 00 00 00 00 00 00 55 aa 53 52 6d 0b 
+rece cmd is: aa 55 01 e5 00 00 00 00 00 00 00 00 00 00 55 aa ce 5d 8c 7d 
+power on cmd send succeed, and serial port COM4 close succeed!
+2025-03-27 16:56:27,816 [INFO] 程序已以管理员权限运行。
+2025-03-27 16:56:27,821 [INFO] [INFO] Detected post-reboot. Reboot finish...
+2025-03-27 16:56:27,837 [INFO] [INFO] Task deleted.
+2025-03-27 16:56:27,837 [INFO] [INFO] Workflow completed successfully.
+2025-03-27 16:56:27,837 [INFO] step 2: delay power off
+2025-03-27 16:56:27,837 [INFO] 识盘命令输出：
+2025-03-27 16:56:27,849 [INFO] smart_log : 错误代码 1: 系统找不到指定的路径。
+2025-03-27 16:56:28,851 [INFO] 识盘命令输出：
+2025-03-27 16:56:28,860 [INFO] smart_log : 错误代码 1: 系统找不到指定的路径。
+2025-03-27 16:56:29,870 [INFO] 识盘命令输出：
+2025-03-27 16:56:29,879 [INFO] smart_log : 错误代码 1: 系统找不到指定的路径。
+2025-03-27 16:56:30,890 [INFO] 识盘命令输出：
+2025-03-27 16:56:30,898 [INFO] smart_log : 错误代码 1: 系统找不到指定的路径。
+2025-03-27 16:56:31,908 [INFO] 识盘命令输出：
+2025-03-27 16:56:31,917 [INFO] smart_log : 错误代码 1: 系统找不到指定的路径。
+2025-03-27 16:56:32,923 [INFO] 识盘命令输出：
+2025-03-27 16:56:32,932 [INFO] smart_log : 错误代码 1: 系统找不到指定的路径。
+2025-03-27 16:56:33,941 [INFO] 识盘命令输出：
+2025-03-27 16:56:33,950 [INFO] smart_log : 错误代码 1: 系统找不到指定的路径。
+2025-03-27 16:56:34,962 [INFO] 识盘命令输出：
+2025-03-27 16:56:34,971 [INFO] smart_log : 错误代码 1: 系统找不到指定的路径。
+2025-03-27 16:56:35,982 [INFO] 识盘命令输出：
+2025-03-27 16:56:35,990 [INFO] smart_log : 错误代码 1: 系统找不到指定的路径。
+2025-03-27 16:56:37,001 [INFO] 识盘命令输出：
+2025-03-27 16:56:37,010 [INFO] smart_log : 错误代码 1: 系统找不到指定的路径。
+2025-03-27 16:56:38,019 [INFO] 等待5秒后开始上电
+2025-03-27 16:56:53,672 [INFO] 流程完成。
+计时开始，2s后开始掉电
+
+command : smartctl.exe -a /dev/sda > ..\smartcli_log\all.txt
+command : smartctl.exe -a /dev/sda > ..\smartcli_log\all.txt
+执行掉电
+send cmd is: aa 55 00 e5 01 00 00 00 00 00 00 00 00 00 55 aa c8 f7 21 64 00 
+command : smartctl.exe -a /dev/sda > ..\smartcli_log\all.txt
+command : smartctl.exe -a /dev/sda > ..\smartcli_log\all.txt
+command : smartctl.exe -a /dev/sda > ..\smartcli_log\all.txt
+command : smartctl.exe -a /dev/sda > ..\smartcli_log\all.txt
+command : smartctl.exe -a /dev/sda > ..\smartcli_log\all.txt
+command : smartctl.exe -a /dev/sda > ..\smartcli_log\all.txt
+command : smartctl.exe -a /dev/sda > ..\smartcli_log\all.txt
+command : smartctl.exe -a /dev/sda > ..\smartcli_log\all.txt
+rece cmd is: aa 55 01 e5 01 00 00 00 00 00 00 00 00 00 55 aa 55 f8 c0 12 
+power off cmd send succeed, and serial port COM4 close succeed!
+send cmd is: aa 55 00 e5 00 00 00 00 00 00 00 00 00 00 55 aa 53 52 6d 0b 
+rece cmd is: aa 55 01 e5 00 00 00 00 00 00 00 00 00 00 55 aa ce 5d 8c 7d 
+power on cmd send succeed, and serial port COM4 close succeed!

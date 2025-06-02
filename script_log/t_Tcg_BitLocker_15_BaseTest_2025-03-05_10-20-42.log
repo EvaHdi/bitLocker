@@ -1,0 +1,65 @@
+2025-03-05 10:20:42,485 [INFO] 程序已以管理员权限运行。
+2025-03-05 10:20:42,485 [INFO] new volume
+2025-03-05 10:21:02,869 [INFO] Scanning for Opal compliant disks
+\\.\PhysicalDrive0  2      RSYE3839S-480G                           SP301012
+\\.\PhysicalDrive1 No       
+No more disks present ending scan
+2025-03-05 10:21:02,869 [INFO] step 1: status check
+2025-03-05 10:21:02,922 [INFO] BitLocker 驱动器加密: 配置工具版本 10.0.19041
+版权所有 (C) 2013 Microsoft Corporation。保留所有权利。
+
+卷 D: []
+[数据卷]
+
+    大小:              447.12 GB
+    BitLocker 版本:    无
+    转换状态:          完全解密
+    已加密百分比:      0.0%
+    加密方法:          无
+    保护状态:          保护关闭
+    锁定状态:          已解锁
+    标识字段:          无
+    自动解锁:          已禁用
+    密钥保护器:        找不到
+2025-03-05 10:21:02,923 [INFO] disk_current_status : {'BitLocker 驱动器加密': '配置工具版本 10.0.19041', '卷 D': '[]', '大小': '447.12 GB', 'BitLocker 版本': '无', '转换状态': '完全解密', '已加密百分比': '0.0%', '加密方法': '无', '保护状态': '保护关闭', '锁定状态': '已解锁', '标识字段': '无', '自动解锁': '已禁用', '密钥保护器': '找不到'}
+2025-03-05 10:21:02,923 [INFO] step 2: bitlocker on
+2025-03-05 10:21:18,081 [INFO] key: {password}
+2025-03-05 10:21:19,150 [INFO] disk_current_status : {'BitLocker 驱动器加密': '配置工具版本 10.0.19041', '卷 D': '[]', '大小': '447.12 GB', 'BitLocker 版本': '无', '转换状态': '完全解密', '已加密百分比': '0.0%', '加密方法': '无', '保护状态': '保护关闭', '锁定状态': '已解锁', '标识字段': '无', '自动解锁': '已禁用', '密钥保护器': '找不到'}
+2025-03-05 10:21:19,151 [INFO] step 3: bitlocker add password
+2025-03-05 10:21:25,115 [INFO] step 4: bitlocker change password
+2025-03-05 10:21:32,076 [INFO] step 5: bitlocker lock
+2025-03-05 10:21:33,774 [INFO] BitLocker 驱动器加密: 配置工具版本 10.0.19041
+版权所有 (C) 2013 Microsoft Corporation。保留所有权利。
+
+卷 D: 现在已锁定
+2025-03-05 10:21:34,847 [INFO] current_locked_state : 已锁定
+2025-03-05 10:21:34,848 [INFO] step 6: read and write after disk locked
+2025-03-05 10:21:34,848 [ERROR] 写入失败，错误信息：[Errno 22] Invalid argument: 'D://test_file.txt'
+Traceback (most recent call last):
+  File "t_Tcg_BitLocker_15_BaseTest.py", line 97, in verify_locked
+    with open(test_file, "w") as file:
+OSError: [Errno 22] Invalid argument: 'D://test_file.txt'
+2025-03-05 10:21:34,850 [ERROR] 读取失败，错误信息：[WinError -2144272384] BitLocker 驱动器加密已锁定该驱动器。必须从控制面板解除此驱动器锁定。: 'D://'
+Traceback (most recent call last):
+  File "t_Tcg_BitLocker_15_BaseTest.py", line 110, in verify_locked
+    files = os.listdir(drive_letter)
+OSError: [WinError -2144272384] BitLocker 驱动器加密已锁定该驱动器。必须从控制面板解除此驱动器锁定。: 'D://'
+2025-03-05 10:21:34,850 [ERROR] 写入失败，错误信息：[Errno 22] Invalid argument: 'D://test_file.txt'
+Traceback (most recent call last):
+  File "t_Tcg_BitLocker_15_BaseTest.py", line 97, in verify_locked
+    with open(test_file, "w") as file:
+OSError: [Errno 22] Invalid argument: 'D://test_file.txt'
+2025-03-05 10:21:34,850 [ERROR] 读取失败，错误信息：[WinError -2144272384] BitLocker 驱动器加密已锁定该驱动器。必须从控制面板解除此驱动器锁定。: 'D://'
+Traceback (most recent call last):
+  File "t_Tcg_BitLocker_15_BaseTest.py", line 110, in verify_locked
+    files = os.listdir(drive_letter)
+OSError: [WinError -2144272384] BitLocker 驱动器加密已锁定该驱动器。必须从控制面板解除此驱动器锁定。: 'D://'
+2025-03-05 10:21:34,851 [INFO] D: 已被锁定。
+2025-03-05 10:21:34,851 [INFO] step 7: bitlocker unlock
+2025-03-05 10:21:40,284 [INFO] current_locked_state : 已解锁
+2025-03-05 10:21:40,284 [INFO] step 8: bitlocker off
+2025-03-05 10:21:46,799 [INFO] current_transition_state : 完全解密
+2025-03-05 10:21:46,800 [INFO] step 9: bitlocker on again
+2025-03-05 10:22:02,057 [INFO] key: 316624-565048-170500-220704-190124-073722-527120-152823
+2025-03-05 10:22:02,057 [INFO] step 10: bitlocker off
+2025-03-05 10:22:08,374 [INFO] current_transition_state : 完全解密

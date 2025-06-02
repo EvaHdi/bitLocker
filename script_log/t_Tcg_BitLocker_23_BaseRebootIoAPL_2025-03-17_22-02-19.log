@@ -1,0 +1,13 @@
+2025-03-17 22:02:19,618 [INFO] 程序已以管理员权限运行。
+2025-03-17 22:02:19,618 [INFO] 程序已以管理员权限运行。
+2025-03-17 22:02:19,619 [INFO] [INFO] Detected post-reboot. Running disable BitLocker logic...
+2025-03-17 22:02:19,619 [INFO] [INFO] BitLocker unlock...
+2025-03-17 22:02:22,881 [INFO] FIO read write
+2025-03-17 22:02:22,882 [INFO] Running command: fio.exe --name=seqwrite --rw=write --bs=128k --size=10G --directory=D\:\fio_test --filename=testfile --iodepth=1 --output=fio_log\seqwrite.log
+2025-03-17 22:02:38,721 [INFO] Sequential write completed successfully.
+2025-03-17 22:02:38,721 [INFO] Deleting test directory: D:\fio_test
+2025-03-17 22:02:39,137 [INFO] Test directory deleted successfully.
+2025-03-17 22:02:39,138 [INFO] [INFO] BitLocker off...
+2025-03-17 22:02:39,221 [INFO] [INFO] Task deleted.
+2025-03-17 22:02:39,222 [INFO] [INFO] Workflow completed successfully.
+2025-03-17 22:02:39,224 [INFO] 流程完成。

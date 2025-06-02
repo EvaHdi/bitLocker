@@ -1,0 +1,86 @@
+2025-04-07 20:31:25,827 [INFO] 程序已以管理员权限运行。
+2025-04-07 20:31:25,827 [INFO] new volume
+2025-04-07 20:31:46,245 [INFO] Scanning for Opal compliant disks
+\\.\PhysicalDrive0  2      RSYE3839S-3840                           SP301018
+\\.\PhysicalDrive1 No       
+No more disks present ending scan
+2025-04-07 20:31:46,245 [INFO] step 1: status check
+2025-04-07 20:31:46,299 [INFO] BitLocker 驱动器加密: 配置工具版本 10.0.19041
+版权所有 (C) 2013 Microsoft Corporation。保留所有权利。
+
+卷 D: []
+[数据卷]
+
+    大小:              3576.97 GB
+    BitLocker 版本:    无
+    转换状态:          完全解密
+    已加密百分比:      0.0%
+    加密方法:          无
+    保护状态:          保护关闭
+    锁定状态:          已解锁
+    标识字段:          无
+    自动解锁:          已禁用
+    密钥保护器:        找不到
+2025-04-07 20:31:46,300 [INFO] disk_current_status : {'BitLocker 驱动器加密': '配置工具版本 10.0.19041', '卷 D': '[]', '大小': '3576.97 GB', 'BitLocker 版本': '无', '转换状态': '完全解密', '已加密百分比': '0.0%', '加密方法': '无', '保护状态': '保护关闭', '锁定状态': '已解锁', '标识字段': '无', '自动解锁': '已禁用', '密钥保护器': '找不到'}
+2025-04-07 20:31:46,300 [INFO] step 2: bitlocker on
+2025-04-07 20:31:50,597 [INFO] key: {password}
+2025-04-07 20:31:51,672 [INFO] disk_current_status : {'BitLocker 驱动器加密': '配置工具版本 10.0.19041', '卷 D': '[]', '大小': '3576.97 GB', 'BitLocker 版本': '无', '转换状态': '完全解密', '已加密百分比': '0.0%', '加密方法': '无', '保护状态': '保护关闭', '锁定状态': '已解锁', '标识字段': '无', '自动解锁': '已禁用', '密钥保护器': '找不到'}
+2025-04-07 20:31:51,672 [INFO] step 3: bitlocker add password
+2025-04-07 20:31:55,680 [INFO] step 4: bitlocker change password
+2025-04-07 20:32:01,332 [INFO] step 5: bitlocker lock
+2025-04-07 20:32:02,362 [INFO] BitLocker 驱动器加密: 配置工具版本 10.0.19041
+版权所有 (C) 2013 Microsoft Corporation。保留所有权利。
+
+卷 D: 现在已锁定
+2025-04-07 20:32:03,446 [INFO] current_locked_state : 已锁定
+2025-04-07 20:32:03,446 [INFO] step 6: read and write after disk locked
+2025-04-07 20:32:03,447 [ERROR] 写入失败，错误信息：[Errno 22] Invalid argument: 'D://test_file.txt'
+Traceback (most recent call last):
+  File "t_Tcg_BitLocker_17_BaseAPL.py", line 88, in verify_locked
+    with open(test_file, "w") as file:
+OSError: [Errno 22] Invalid argument: 'D://test_file.txt'
+2025-04-07 20:32:03,447 [ERROR] 读取失败，错误信息：[WinError -2144272384] BitLocker 驱动器加密已锁定该驱动器。必须从控制面板解除此驱动器锁定。: 'D://'
+Traceback (most recent call last):
+  File "t_Tcg_BitLocker_17_BaseAPL.py", line 101, in verify_locked
+    files = os.listdir(drive_letter)
+OSError: [WinError -2144272384] BitLocker 驱动器加密已锁定该驱动器。必须从控制面板解除此驱动器锁定。: 'D://'
+2025-04-07 20:32:03,447 [ERROR] 写入失败，错误信息：[Errno 22] Invalid argument: 'D://test_file.txt'
+Traceback (most recent call last):
+  File "t_Tcg_BitLocker_17_BaseAPL.py", line 88, in verify_locked
+    with open(test_file, "w") as file:
+OSError: [Errno 22] Invalid argument: 'D://test_file.txt'
+2025-04-07 20:32:03,447 [ERROR] 读取失败，错误信息：[WinError -2144272384] BitLocker 驱动器加密已锁定该驱动器。必须从控制面板解除此驱动器锁定。: 'D://'
+Traceback (most recent call last):
+  File "t_Tcg_BitLocker_17_BaseAPL.py", line 101, in verify_locked
+    files = os.listdir(drive_letter)
+OSError: [WinError -2144272384] BitLocker 驱动器加密已锁定该驱动器。必须从控制面板解除此驱动器锁定。: 'D://'
+2025-04-07 20:32:03,448 [INFO] D: 已被锁定。
+2025-04-07 20:32:03,448 [INFO] step 7: bitlocker unlock
+2025-04-07 20:32:08,539 [INFO] current_locked_state : 已解锁
+2025-04-07 20:32:08,539 [INFO] step 8: bitlocker off
+2025-04-07 20:32:12,528 [INFO] current_transition_state : 完全解密
+2025-04-07 20:32:12,529 [INFO] step 9: bitlocker on again
+2025-04-07 20:32:20,307 [INFO] key: 643148-248028-117227-323796-630190-390764-597014-497541
+2025-04-07 20:32:20,307 [INFO] step 10: bitlocker off
+2025-04-07 20:32:24,339 [INFO] current_transition_state : 完全解密
+2025-04-07 20:32:24,340 [INFO] step 11: APL
+2025-04-07 20:32:24,343 [INFO] delay power off
+2025-04-07 20:32:24,345 [INFO] 识盘命令输出：
+2025-04-07 20:32:24,409 [INFO] smart_log : 
+2025-04-07 20:32:25,410 [INFO] 识盘命令输出：
+2025-04-07 20:32:25,481 [INFO] smart_log : 
+2025-04-07 20:32:26,481 [INFO] 识盘命令输出：
+2025-04-07 20:32:27,138 [INFO] smart_log : 错误代码 2: 
+2025-04-07 20:32:28,144 [INFO] 识盘命令输出：
+2025-04-07 20:32:28,203 [INFO] smart_log : 错误代码 1: 
+2025-04-07 20:32:29,215 [INFO] 识盘命令输出：
+2025-04-07 20:32:29,273 [INFO] smart_log : 错误代码 1: 
+2025-04-07 20:32:30,287 [INFO] 识盘命令输出：
+2025-04-07 20:32:30,343 [INFO] smart_log : 错误代码 1: 
+2025-04-07 20:32:31,356 [INFO] 识盘命令输出：
+2025-04-07 20:32:31,414 [INFO] smart_log : 错误代码 1: 
+2025-04-07 20:32:32,416 [INFO] 识盘命令输出：
+2025-04-07 20:32:32,472 [INFO] smart_log : 错误代码 1: 
+2025-04-07 20:32:33,487 [INFO] 识盘命令输出：
+2025-04-07 20:32:33,546 [INFO] smart_log : 错误代码 1: 
+2025-04-07 20:32:34,555 [INFO] 等待5秒后开始上电

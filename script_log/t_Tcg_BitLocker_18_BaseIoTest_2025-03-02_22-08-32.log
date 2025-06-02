@@ -1,0 +1,68 @@
+2025-03-02 22:08:32,274 [INFO] 程序已以管理员权限运行。
+2025-03-02 22:08:32,274 [INFO] new volume
+2025-03-02 22:08:52,627 [INFO] Scanning for Opal compliant disks
+\\.\PhysicalDrive0  2      RSYE3839S-480G                           SP301010
+\\.\PhysicalDrive1 No       
+No more disks present ending scan
+2025-03-02 22:08:52,628 [INFO] step 1: status check
+2025-03-02 22:08:52,675 [INFO] BitLocker 驱动器加密: 配置工具版本 10.0.19041
+版权所有 (C) 2013 Microsoft Corporation。保留所有权利。
+
+卷 D: []
+[数据卷]
+
+    大小:              447.12 GB
+    BitLocker 版本:    无
+    转换状态:          完全解密
+    已加密百分比:      0.0%
+    加密方法:          无
+    保护状态:          保护关闭
+    锁定状态:          已解锁
+    标识字段:          无
+    自动解锁:          已禁用
+    密钥保护器:        找不到
+2025-03-02 22:08:52,676 [INFO] disk_current_status : {'BitLocker 驱动器加密': '配置工具版本 10.0.19041', '卷 D': '[]', '大小': '447.12 GB', 'BitLocker 版本': '无', '转换状态': '完全解密', '已加密百分比': '0.0%', '加密方法': '无', '保护状态': '保护关闭', '锁定状态': '已解锁', '标识字段': '无', '自动解锁': '已禁用', '密钥保护器': '找不到'}
+2025-03-02 22:08:52,676 [INFO] FIO read write
+2025-03-02 22:08:52,677 [INFO] Running command: fio.exe --name=seqwrite --rw=write --bs=128k --size=10G --directory=D\:\fio_test --filename=testfile --iodepth=1 --output=fio_log\seqwrite.log
+2025-03-02 22:09:08,518 [INFO] Sequential write completed successfully.
+2025-03-02 22:09:08,519 [INFO] step 2: bitlocker on
+2025-03-02 22:09:23,910 [INFO] key: {password}
+2025-03-02 22:09:24,996 [INFO] disk_current_status : {'BitLocker 驱动器加密': '配置工具版本 10.0.19041', '卷 D': '[]', '大小': '447.12 GB', 'BitLocker 版本': '无', '转换状态': '完全解密', '已加密百分比': '0.0%', '加密方法': '无', '保护状态': '保护关闭', '锁定状态': '已解锁', '标识字段': '无', '自动解锁': '已禁用', '密钥保护器': '找不到'}
+2025-03-02 22:09:24,996 [INFO] step 3: bitlocker add password
+2025-03-02 22:09:30,874 [INFO] step 4: bitlocker change password
+2025-03-02 22:09:37,753 [INFO] step 5: bitlocker lock
+2025-03-02 22:09:41,176 [INFO] BitLocker 驱动器加密: 配置工具版本 10.0.19041
+版权所有 (C) 2013 Microsoft Corporation。保留所有权利。
+
+卷 D: 现在已锁定
+2025-03-02 22:09:42,254 [INFO] current_locked_state : 已锁定
+2025-03-02 22:09:42,255 [INFO] step 6: read and write after disk locked
+2025-03-02 22:09:42,255 [ERROR] 写入失败，错误信息：[Errno 22] Invalid argument: 'D://test_file.txt'
+Traceback (most recent call last):
+  File "t_Tcg_BitLocker_18_BaseIoTest.py", line 91, in verify_locked
+    with open(test_file, "w") as file:
+OSError: [Errno 22] Invalid argument: 'D://test_file.txt'
+2025-03-02 22:09:42,256 [ERROR] 读取失败，错误信息：[WinError -2144272384] BitLocker 驱动器加密已锁定该驱动器。必须从控制面板解除此驱动器锁定。: 'D://'
+Traceback (most recent call last):
+  File "t_Tcg_BitLocker_18_BaseIoTest.py", line 104, in verify_locked
+    files = os.listdir(drive_letter)
+OSError: [WinError -2144272384] BitLocker 驱动器加密已锁定该驱动器。必须从控制面板解除此驱动器锁定。: 'D://'
+2025-03-02 22:09:42,256 [ERROR] 写入失败，错误信息：[Errno 22] Invalid argument: 'D://test_file.txt'
+Traceback (most recent call last):
+  File "t_Tcg_BitLocker_18_BaseIoTest.py", line 91, in verify_locked
+    with open(test_file, "w") as file:
+OSError: [Errno 22] Invalid argument: 'D://test_file.txt'
+2025-03-02 22:09:42,256 [ERROR] 读取失败，错误信息：[WinError -2144272384] BitLocker 驱动器加密已锁定该驱动器。必须从控制面板解除此驱动器锁定。: 'D://'
+Traceback (most recent call last):
+  File "t_Tcg_BitLocker_18_BaseIoTest.py", line 104, in verify_locked
+    files = os.listdir(drive_letter)
+OSError: [WinError -2144272384] BitLocker 驱动器加密已锁定该驱动器。必须从控制面板解除此驱动器锁定。: 'D://'
+2025-03-02 22:09:42,256 [INFO] D: 已被锁定。
+2025-03-02 22:09:42,256 [INFO] step 7: bitlocker unlock
+2025-03-02 22:09:47,961 [INFO] current_locked_state : 已解锁
+2025-03-02 22:09:47,961 [INFO] step 8: bitlocker off
+2025-03-02 22:09:54,341 [INFO] current_transition_state : 完全解密
+2025-03-02 22:09:54,342 [INFO] step 9: bitlocker on again
+2025-03-02 22:10:09,535 [INFO] key: 055099-016709-342540-349932-115830-495187-351692-218427
+2025-03-02 22:10:09,536 [INFO] step 10: bitlocker off
+2025-03-02 22:10:16,086 [INFO] current_transition_state : 完全解密

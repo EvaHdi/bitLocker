@@ -1,0 +1,37 @@
+2025-02-21 09:51:52,150 [INFO] 程序已以管理员权限运行。
+2025-02-21 09:51:52,150 [INFO] step 1 Format
+2025-02-21 09:52:12,497 [INFO] step 2: status check
+2025-02-21 09:52:12,599 [INFO] current_transition_state : \\.\PhysicalDrive0 ATA RSYE3839Z-960G                           SP30100B PCDH744400085       
+TPer function (0x0001)
+    ACKNAK = N, ASYNC = N. BufferManagement = N, comIDManagement  = N, Streaming = Y, SYNC = Y
+Locking function (0x0002)
+    Locked = N, LockingEnabled = Y, LockingSupported = Y, MBRDone = N, MBREnabled = N, MBRAbsent = N, MediaEncrypt = Y
+Geometry function (0x0003)
+    Align = Y, Alignment Granularity = 8 (4096), Logical Block size = 512, Lowest Aligned LBA = 0
+SingleUser function (0x0201)
+    ALL = Y, ANY = Y, Policy = N, Locking Objects = 9
+DataStore function (0x0202)
+    Max Tables = 9, Max Size Tables = 10485760, Table size alignment = 1
+OPAL 2.0 function (0x0203)
+    Base comID = 0x1004, Initial PIN = 0x00, Reverted PIN = 0x00, comIDs = 1
+    Locking Admins = 4, Locking Users = 9, Range Crossing = N
+Block SID Authentication function (0x0402)
+    SID Blocked State = N, SID Value State = Y, Hardware Reset = N
+Supported Data Removal Mechanism function (0x0404)
+    Processing = N, Block = 61440s , Crypto = 0s 
+**** 1 **** Unknown function codes IGNORED 
+
+TPer Properties: 
+  MaxMethods = 1  MaxSubpackets = 1
+  MaxPacketSize = 131052  MaxPackets = 1  MaxComPacketSize = 131072
+  MaxResponseComPacketSize = 131072  MaxSessions = 1  MaxReadSessions = 0
+  MaxIndTokenSize = 131016  MaxAuthentications = 5  MaxTransactionLimit = 1
+  DefSessionTimeout = 0  MAXSessionTimeout = 0  MinSessionTimeout = 0
+  ContinuedTokens = 0  SequenceNumbers = 0  AckNak = 0
+  Asynchronous = 0
+Host Properties: 
+  MaxMethods = 1
+  MaxSubpackets = 1  MaxPacketSize = 2028  MaxPackets = 1
+  MaxComPacketSize = 2048  MaxResponseComPacketSize = 65536  MaxIndTokenSize = 1992
+  ContinuedTokens = 0  SequenceNumbers = 0  AckNak = 0
+  Asynchronous = 0

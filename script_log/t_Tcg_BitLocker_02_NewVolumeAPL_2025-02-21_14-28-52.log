@@ -1,0 +1,57 @@
+2025-02-21 14:28:52,148 [INFO] 程序已以管理员权限运行。
+2025-02-21 14:28:52,148 [INFO] step 1: new volume
+2025-02-21 14:29:12,501 [INFO] step 2: status check
+2025-02-21 14:29:12,626 [INFO] current_transition_state : \\.\PhysicalDrive0 ATA RSYE3839Z-480G                           SP30100B PF5H415400098       
+TPer function (0x0001)
+    ACKNAK = N, ASYNC = N. BufferManagement = N, comIDManagement  = N, Streaming = Y, SYNC = Y
+Locking function (0x0002)
+    Locked = N, LockingEnabled = Y, LockingSupported = Y, MBRDone = N, MBREnabled = N, MBRAbsent = N, MediaEncrypt = Y
+Geometry function (0x0003)
+    Align = Y, Alignment Granularity = 8 (4096), Logical Block size = 512, Lowest Aligned LBA = 0
+SingleUser function (0x0201)
+    ALL = Y, ANY = Y, Policy = N, Locking Objects = 9
+DataStore function (0x0202)
+    Max Tables = 9, Max Size Tables = 10485760, Table size alignment = 1
+OPAL 2.0 function (0x0203)
+    Base comID = 0x1004, Initial PIN = 0x00, Reverted PIN = 0x00, comIDs = 1
+    Locking Admins = 4, Locking Users = 9, Range Crossing = N
+Block SID Authentication function (0x0402)
+    SID Blocked State = N, SID Value State = Y, Hardware Reset = N
+Supported Data Removal Mechanism function (0x0404)
+    Processing = N, Block = 61440s , Crypto = 0s 
+**** 1 **** Unknown function codes IGNORED 
+
+TPer Properties: 
+  MaxMethods = 1  MaxSubpackets = 1
+  MaxPacketSize = 131052  MaxPackets = 1  MaxComPacketSize = 131072
+  MaxResponseComPacketSize = 131072  MaxSessions = 1  MaxReadSessions = 0
+  MaxIndTokenSize = 131016  MaxAuthentications = 5  MaxTransactionLimit = 1
+  DefSessionTimeout = 0  MAXSessionTimeout = 0  MinSessionTimeout = 0
+  ContinuedTokens = 0  SequenceNumbers = 0  AckNak = 0
+  Asynchronous = 0
+Host Properties: 
+  MaxMethods = 1
+  MaxSubpackets = 1  MaxPacketSize = 2028  MaxPackets = 1
+  MaxComPacketSize = 2048  MaxResponseComPacketSize = 65536  MaxIndTokenSize = 1992
+  ContinuedTokens = 0  SequenceNumbers = 0  AckNak = 0
+  Asynchronous = 0
+2025-02-21 14:29:12,626 [INFO] step 0: delay power off
+2025-02-21 14:29:12,627 [INFO] 识盘命令输出：
+2025-02-21 14:29:12,743 [INFO] smart_log : 
+2025-02-21 14:29:13,751 [INFO] 识盘命令输出：
+2025-02-21 14:29:14,519 [INFO] smart_log : 错误代码 2: 
+2025-02-21 14:29:15,526 [INFO] 识盘命令输出：
+2025-02-21 14:29:15,589 [INFO] smart_log : 错误代码 1: 
+2025-02-21 14:29:16,592 [INFO] 识盘命令输出：
+2025-02-21 14:29:16,635 [INFO] smart_log : 错误代码 1: 
+2025-02-21 14:29:17,640 [INFO] 识盘命令输出：
+2025-02-21 14:29:17,695 [INFO] smart_log : 错误代码 1: 
+2025-02-21 14:29:18,702 [INFO] 识盘命令输出：
+2025-02-21 14:29:18,764 [INFO] smart_log : 错误代码 1: 
+2025-02-21 14:29:19,765 [INFO] 识盘命令输出：
+2025-02-21 14:29:19,826 [INFO] smart_log : 错误代码 1: 
+2025-02-21 14:29:20,831 [INFO] 识盘命令输出：
+2025-02-21 14:29:20,873 [INFO] smart_log : 错误代码 1: 
+2025-02-21 14:29:21,883 [INFO] 识盘命令输出：
+2025-02-21 14:29:21,944 [INFO] smart_log : 错误代码 1: 
+2025-02-21 14:29:22,949 [INFO] 等待5秒后开始上电

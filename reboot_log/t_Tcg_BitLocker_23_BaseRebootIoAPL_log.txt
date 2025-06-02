@@ -1,0 +1,521 @@
+2025-02-18 10:14:54,682 [INFO] 程序已以管理员权限运行。
+2025-02-18 10:14:54,683 [INFO] 程序已以管理员权限运行。
+2025-02-18 10:14:54,685 [INFO] [INFO] Detected post-reboot. Running disable BitLocker logic...
+2025-02-18 10:14:54,685 [INFO] [INFO] BitLocker unlock...
+BitLocker 驱动器加密: 配置工具版本 10.0.19041
+版权所有 (C) 2013 Microsoft Corporation。保留所有权利。
+
+请输入密码以解锁此卷: 
+密码已成功解锁卷 D:。
+2025-02-18 10:15:00,272 [INFO] FIO read write
+2025-02-18 10:15:00,272 [INFO] Running command: fio.exe --name=seqwrite --rw=write --bs=128k --size=10G --directory=D\:\fio_test --filename=testfile --iodepth=1 --output=fio_log\seqwrite.log
+fio: output file open error: No such file or directory
+2025-02-18 10:15:00,307 [ERROR] Error during sequential write: Command 'fio.exe --name=seqwrite --rw=write --bs=128k --size=10G --directory=D\:\fio_test --filename=testfile --iodepth=1 --output=fio_log\seqwrite.log' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\bitlockerTest\test_case\t_Tcg_BitLocker_23_BaseRebootIoAPL.py", line 192, in Run
+    subprocess.run(fio_command, check=True, shell=True)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\subprocess.py", line 516, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command 'fio.exe --name=seqwrite --rw=write --bs=128k --size=10G --directory=D\:\fio_test --filename=testfile --iodepth=1 --output=fio_log\seqwrite.log' returned non-zero exit status 1.
+2025-02-18 10:15:00,320 [INFO] Deleting test directory: D:\fio_test
+2025-02-18 10:15:00,320 [INFO] Test directory deleted successfully.
+2025-02-18 10:15:00,320 [INFO] [INFO] BitLocker off...
+2025-02-18 10:15:05,551 [INFO] [INFO] Task deleted.
+2025-02-18 10:15:05,553 [INFO] [INFO] Workflow completed successfully.
+2025-02-18 10:15:05,553 [INFO] 流程完成。
+[DEBUG] Password protector added successfully.
+2025-02-18 12:14:49,739 [INFO] 程序已以管理员权限运行。
+2025-02-18 12:14:49,739 [INFO] 程序已以管理员权限运行。
+2025-02-18 12:14:49,742 [INFO] [INFO] Detected post-reboot. Running disable BitLocker logic...
+2025-02-18 12:14:49,742 [INFO] [INFO] BitLocker unlock...
+BitLocker 驱动器加密: 配置工具版本 10.0.19041
+版权所有 (C) 2013 Microsoft Corporation。保留所有权利。
+
+请输入密码以解锁此卷: 
+密码已成功解锁卷 D:。
+2025-02-18 12:14:55,361 [INFO] FIO read write
+2025-02-18 12:14:55,361 [INFO] Running command: fio.exe --name=seqwrite --rw=write --bs=128k --size=10G --directory=D\:\fio_test --filename=testfile --iodepth=1 --output=fio_log\seqwrite.log
+fio: output file open error: No such file or directory
+2025-02-18 12:14:55,395 [ERROR] Error during sequential write: Command 'fio.exe --name=seqwrite --rw=write --bs=128k --size=10G --directory=D\:\fio_test --filename=testfile --iodepth=1 --output=fio_log\seqwrite.log' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\bitlockerTest\test_case\t_Tcg_BitLocker_23_BaseRebootIoAPL.py", line 192, in Run
+    subprocess.run(fio_command, check=True, shell=True)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\subprocess.py", line 516, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command 'fio.exe --name=seqwrite --rw=write --bs=128k --size=10G --directory=D\:\fio_test --filename=testfile --iodepth=1 --output=fio_log\seqwrite.log' returned non-zero exit status 1.
+2025-02-18 12:14:55,409 [INFO] Deleting test directory: D:\fio_test
+2025-02-18 12:14:55,409 [INFO] Test directory deleted successfully.
+2025-02-18 12:14:55,409 [INFO] [INFO] BitLocker off...
+2025-02-18 12:15:00,723 [INFO] [INFO] Task deleted.
+2025-02-18 12:15:00,725 [INFO] [INFO] Workflow completed successfully.
+2025-02-18 12:15:00,725 [INFO] 流程完成。
+[DEBUG] Password protector added successfully.
+2025-02-18 14:42:58,875 [INFO] 程序已以管理员权限运行。
+2025-02-18 14:42:58,876 [INFO] 程序已以管理员权限运行。
+2025-02-18 14:42:58,878 [INFO] [INFO] Detected post-reboot. Running disable BitLocker logic...
+2025-02-18 14:42:58,878 [INFO] [INFO] BitLocker unlock...
+BitLocker 驱动器加密: 配置工具版本 10.0.19041
+版权所有 (C) 2013 Microsoft Corporation。保留所有权利。
+
+请输入密码以解锁此卷: 
+密码已成功解锁卷 D:。
+2025-02-18 14:43:04,527 [INFO] FIO read write
+2025-02-18 14:43:04,527 [INFO] Running command: fio.exe --name=seqwrite --rw=write --bs=128k --size=10G --directory=D\:\fio_test --filename=testfile --iodepth=1 --output=fio_log\seqwrite.log
+fio: output file open error: No such file or directory
+2025-02-18 14:43:04,562 [ERROR] Error during sequential write: Command 'fio.exe --name=seqwrite --rw=write --bs=128k --size=10G --directory=D\:\fio_test --filename=testfile --iodepth=1 --output=fio_log\seqwrite.log' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\bitlockerTest\test_case\t_Tcg_BitLocker_23_BaseRebootIoAPL.py", line 192, in Run
+    subprocess.run(fio_command, check=True, shell=True)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\subprocess.py", line 516, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command 'fio.exe --name=seqwrite --rw=write --bs=128k --size=10G --directory=D\:\fio_test --filename=testfile --iodepth=1 --output=fio_log\seqwrite.log' returned non-zero exit status 1.
+2025-02-18 14:43:04,575 [INFO] Deleting test directory: D:\fio_test
+2025-02-18 14:43:04,576 [INFO] Test directory deleted successfully.
+2025-02-18 14:43:04,576 [INFO] [INFO] BitLocker off...
+2025-02-18 14:43:09,836 [INFO] [INFO] Task deleted.
+2025-02-18 14:43:09,838 [INFO] [INFO] Workflow completed successfully.
+2025-02-18 14:43:09,838 [INFO] 流程完成。
+[DEBUG] Password protector added successfully.
+2025-02-21 10:38:08,779 [INFO] 程序已以管理员权限运行。
+2025-02-21 10:38:08,780 [INFO] 程序已以管理员权限运行。
+2025-02-21 10:38:08,785 [INFO] [INFO] Detected post-reboot. Running disable BitLocker logic...
+2025-02-21 10:38:08,785 [INFO] [INFO] BitLocker unlock...
+BitLocker 驱动器加密: 配置工具版本 10.0.19041
+版权所有 (C) 2013 Microsoft Corporation。保留所有权利。
+
+请输入密码以解锁此卷: 
+密码已成功解锁卷 D:。
+2025-02-21 10:38:14,274 [INFO] FIO read write
+2025-02-21 10:38:14,274 [INFO] Running command: fio.exe --name=seqwrite --rw=write --bs=128k --size=10G --directory=D\:\fio_test --filename=testfile --iodepth=1 --output=fio_log\seqwrite.log
+fio: output file open error: No such file or directory
+2025-02-21 10:38:14,293 [ERROR] Error during sequential write: Command 'fio.exe --name=seqwrite --rw=write --bs=128k --size=10G --directory=D\:\fio_test --filename=testfile --iodepth=1 --output=fio_log\seqwrite.log' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\bitlockerTest\test_case\t_Tcg_BitLocker_23_BaseRebootIoAPL.py", line 192, in Run
+    subprocess.run(fio_command, check=True, shell=True)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\subprocess.py", line 516, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command 'fio.exe --name=seqwrite --rw=write --bs=128k --size=10G --directory=D\:\fio_test --filename=testfile --iodepth=1 --output=fio_log\seqwrite.log' returned non-zero exit status 1.
+2025-02-21 10:38:14,302 [INFO] Deleting test directory: D:\fio_test
+2025-02-21 10:38:14,302 [INFO] Test directory deleted successfully.
+2025-02-21 10:38:14,302 [INFO] [INFO] BitLocker off...
+2025-02-21 10:38:19,600 [INFO] [INFO] Task deleted.
+2025-02-21 10:38:19,601 [INFO] [INFO] Workflow completed successfully.
+2025-02-21 10:38:19,601 [INFO] 流程完成。
+[DEBUG] Password protector added successfully.
+2025-02-21 15:11:50,203 [INFO] 程序已以管理员权限运行。
+2025-02-21 15:11:50,203 [INFO] 程序已以管理员权限运行。
+2025-02-21 15:11:50,208 [INFO] [INFO] Detected post-reboot. Running disable BitLocker logic...
+2025-02-21 15:11:50,209 [INFO] [INFO] BitLocker unlock...
+BitLocker 驱动器加密: 配置工具版本 10.0.19041
+版权所有 (C) 2013 Microsoft Corporation。保留所有权利。
+
+请输入密码以解锁此卷: 
+密码已成功解锁卷 D:。
+2025-02-21 15:11:55,577 [INFO] FIO read write
+2025-02-21 15:11:55,577 [INFO] Running command: fio.exe --name=seqwrite --rw=write --bs=128k --size=10G --directory=D\:\fio_test --filename=testfile --iodepth=1 --output=fio_log\seqwrite.log
+fio: output file open error: No such file or directory
+2025-02-21 15:11:55,596 [ERROR] Error during sequential write: Command 'fio.exe --name=seqwrite --rw=write --bs=128k --size=10G --directory=D\:\fio_test --filename=testfile --iodepth=1 --output=fio_log\seqwrite.log' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\bitlockerTest\test_case\t_Tcg_BitLocker_23_BaseRebootIoAPL.py", line 192, in Run
+    subprocess.run(fio_command, check=True, shell=True)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\subprocess.py", line 516, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command 'fio.exe --name=seqwrite --rw=write --bs=128k --size=10G --directory=D\:\fio_test --filename=testfile --iodepth=1 --output=fio_log\seqwrite.log' returned non-zero exit status 1.
+2025-02-21 15:11:55,606 [INFO] Deleting test directory: D:\fio_test
+2025-02-21 15:11:55,606 [INFO] Test directory deleted successfully.
+2025-02-21 15:11:55,606 [INFO] [INFO] BitLocker off...
+2025-02-21 15:12:00,392 [INFO] [INFO] Task deleted.
+2025-02-21 15:12:00,392 [INFO] [INFO] Workflow completed successfully.
+2025-02-21 15:12:00,392 [INFO] 流程完成。
+[DEBUG] Password protector added successfully.
+2025-02-21 17:31:35,319 [INFO] 程序已以管理员权限运行。
+2025-02-21 17:31:35,320 [INFO] 程序已以管理员权限运行。
+2025-02-21 17:31:35,324 [INFO] [INFO] Detected post-reboot. Running disable BitLocker logic...
+2025-02-21 17:31:35,324 [INFO] [INFO] BitLocker unlock...
+BitLocker 驱动器加密: 配置工具版本 10.0.19041
+版权所有 (C) 2013 Microsoft Corporation。保留所有权利。
+
+请输入密码以解锁此卷: 
+错误: 此密码无法解锁卷 D:。
+2025-02-21 17:31:38,558 [INFO] FIO read write
+2025-02-21 17:31:38,565 [ERROR] 发生异常 : [WinError -2144272384] BitLocker 驱动器加密已锁定该驱动器。必须从控制面板解除此驱动器锁定。: 'D:\\'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\bitlockerTest\test_case\t_Tcg_BitLocker_23_BaseRebootIoAPL.py", line 181, in Run
+    os.makedirs(test_dir)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\os.py", line 213, in makedirs
+    makedirs(head, exist_ok=exist_ok)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\os.py", line 223, in makedirs
+    mkdir(name, mode)
+OSError: [WinError -2144272384] BitLocker 驱动器加密已锁定该驱动器。必须从控制面板解除此驱动器锁定。: 'D:\\'
+2025-02-21 17:31:38,574 [INFO] 流程完成。
+[DEBUG] Failed to add password protector.
+[DEBUG] Return code: 2150694951
+2025-02-21 17:36:06,334 [INFO] 程序已以管理员权限运行。
+2025-02-21 17:36:06,335 [INFO] 程序已以管理员权限运行。
+2025-02-21 17:36:06,339 [INFO] [INFO] Detected post-reboot. Running disable BitLocker logic...
+2025-02-21 17:36:06,339 [INFO] [INFO] BitLocker unlock...
+BitLocker 驱动器加密: 配置工具版本 10.0.19041
+版权所有 (C) 2013 Microsoft Corporation。保留所有权利。
+
+请输入密码以解锁此卷: 
+密码已成功解锁卷 D:。
+2025-02-21 17:36:12,085 [INFO] FIO read write
+2025-02-21 17:36:12,085 [INFO] Running command: fio.exe --name=seqwrite --rw=write --bs=128k --size=10G --directory=D\:\fio_test --filename=testfile --iodepth=1 --output=fio_log\seqwrite.log
+fio: output file open error: No such file or directory
+2025-02-21 17:36:12,105 [ERROR] Error during sequential write: Command 'fio.exe --name=seqwrite --rw=write --bs=128k --size=10G --directory=D\:\fio_test --filename=testfile --iodepth=1 --output=fio_log\seqwrite.log' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\bitlockerTest\test_case\t_Tcg_BitLocker_23_BaseRebootIoAPL.py", line 192, in Run
+    subprocess.run(fio_command, check=True, shell=True)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\subprocess.py", line 516, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command 'fio.exe --name=seqwrite --rw=write --bs=128k --size=10G --directory=D\:\fio_test --filename=testfile --iodepth=1 --output=fio_log\seqwrite.log' returned non-zero exit status 1.
+2025-02-21 17:36:12,114 [INFO] Deleting test directory: D:\fio_test
+2025-02-21 17:36:12,114 [INFO] Test directory deleted successfully.
+2025-02-21 17:36:12,114 [INFO] [INFO] BitLocker off...
+2025-02-21 17:36:17,467 [INFO] [INFO] Task deleted.
+2025-02-21 17:36:17,468 [INFO] [INFO] Workflow completed successfully.
+2025-02-21 17:36:17,468 [INFO] 流程完成。
+[DEBUG] Password protector added successfully.
+2025-02-21 18:26:44,105 [INFO] 程序已以管理员权限运行。
+2025-02-21 18:26:44,106 [INFO] 程序已以管理员权限运行。
+2025-02-21 18:26:44,110 [INFO] [INFO] Detected post-reboot. Running disable BitLocker logic...
+2025-02-21 18:26:44,110 [INFO] [INFO] BitLocker unlock...
+BitLocker 驱动器加密: 配置工具版本 10.0.19041
+版权所有 (C) 2013 Microsoft Corporation。保留所有权利。
+
+请输入密码以解锁此卷: 
+密码已成功解锁卷 D:。
+2025-02-21 18:26:49,875 [INFO] FIO read write
+2025-02-21 18:26:49,875 [INFO] Running command: fio.exe --name=seqwrite --rw=write --bs=128k --size=10G --directory=D\:\fio_test --filename=testfile --iodepth=1 --output=fio_log\seqwrite.log
+fio: output file open error: No such file or directory
+2025-02-21 18:26:49,900 [ERROR] Error during sequential write: Command 'fio.exe --name=seqwrite --rw=write --bs=128k --size=10G --directory=D\:\fio_test --filename=testfile --iodepth=1 --output=fio_log\seqwrite.log' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\bitlockerTest\test_case\t_Tcg_BitLocker_23_BaseRebootIoAPL.py", line 192, in Run
+    subprocess.run(fio_command, check=True, shell=True)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\subprocess.py", line 516, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command 'fio.exe --name=seqwrite --rw=write --bs=128k --size=10G --directory=D\:\fio_test --filename=testfile --iodepth=1 --output=fio_log\seqwrite.log' returned non-zero exit status 1.
+2025-02-21 18:26:49,909 [INFO] Deleting test directory: D:\fio_test
+2025-02-21 18:26:49,910 [INFO] Test directory deleted successfully.
+2025-02-21 18:26:49,910 [INFO] [INFO] BitLocker off...
+2025-02-21 18:26:55,297 [INFO] [INFO] Task deleted.
+2025-02-21 18:26:55,297 [INFO] [INFO] Workflow completed successfully.
+2025-02-21 18:26:55,297 [INFO] 流程完成。
+[DEBUG] Password protector added successfully.
+2025-03-02 22:16:26,208 [INFO] 程序已以管理员权限运行。
+2025-03-02 22:16:26,208 [INFO] 程序已以管理员权限运行。
+2025-03-02 22:16:26,211 [INFO] [INFO] Detected post-reboot. Running disable BitLocker logic...
+2025-03-02 22:16:26,211 [INFO] [INFO] BitLocker unlock...
+BitLocker 驱动器加密: 配置工具版本 10.0.19041
+版权所有 (C) 2013 Microsoft Corporation。保留所有权利。
+
+请输入密码以解锁此卷: 
+密码已成功解锁卷 D:。
+2025-03-02 22:16:31,841 [INFO] FIO read write
+2025-03-02 22:16:31,841 [INFO] Running command: fio.exe --name=seqwrite --rw=write --bs=128k --size=10G --directory=D\:\fio_test --filename=testfile --iodepth=1 --output=fio_log\seqwrite.log
+fio: output file open error: No such file or directory
+2025-03-02 22:16:31,859 [ERROR] Error during sequential write: Command 'fio.exe --name=seqwrite --rw=write --bs=128k --size=10G --directory=D\:\fio_test --filename=testfile --iodepth=1 --output=fio_log\seqwrite.log' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\bitlockerTest\test_case\t_Tcg_BitLocker_23_BaseRebootIoAPL.py", line 192, in Run
+    subprocess.run(fio_command, check=True, shell=True)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\subprocess.py", line 516, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command 'fio.exe --name=seqwrite --rw=write --bs=128k --size=10G --directory=D\:\fio_test --filename=testfile --iodepth=1 --output=fio_log\seqwrite.log' returned non-zero exit status 1.
+2025-03-02 22:16:31,868 [INFO] Deleting test directory: D:\fio_test
+2025-03-02 22:16:31,869 [INFO] Test directory deleted successfully.
+2025-03-02 22:16:31,869 [INFO] [INFO] BitLocker off...
+2025-03-02 22:16:37,277 [INFO] [INFO] Task deleted.
+2025-03-02 22:16:37,277 [INFO] [INFO] Workflow completed successfully.
+2025-03-02 22:16:37,277 [INFO] 流程完成。
+[DEBUG] Password protector added successfully.
+2025-03-04 21:00:14,050 [INFO] 程序已以管理员权限运行。
+2025-03-04 21:00:14,050 [INFO] 程序已以管理员权限运行。
+2025-03-04 21:00:14,055 [INFO] [INFO] Detected post-reboot. Running disable BitLocker logic...
+2025-03-04 21:00:14,055 [INFO] [INFO] BitLocker unlock...
+BitLocker 驱动器加密: 配置工具版本 10.0.19041
+版权所有 (C) 2013 Microsoft Corporation。保留所有权利。
+
+请输入密码以解锁此卷: 
+密码已成功解锁卷 D:。
+2025-03-04 21:00:19,432 [INFO] FIO read write
+2025-03-04 21:00:19,432 [INFO] Running command: fio.exe --name=seqwrite --rw=write --bs=128k --size=10G --directory=D\:\fio_test --filename=testfile --iodepth=1 --output=fio_log\seqwrite.log
+fio: output file open error: No such file or directory
+2025-03-04 21:00:19,451 [ERROR] Error during sequential write: Command 'fio.exe --name=seqwrite --rw=write --bs=128k --size=10G --directory=D\:\fio_test --filename=testfile --iodepth=1 --output=fio_log\seqwrite.log' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\bitlockerTest\test_case\t_Tcg_BitLocker_23_BaseRebootIoAPL.py", line 192, in Run
+    subprocess.run(fio_command, check=True, shell=True)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\subprocess.py", line 516, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command 'fio.exe --name=seqwrite --rw=write --bs=128k --size=10G --directory=D\:\fio_test --filename=testfile --iodepth=1 --output=fio_log\seqwrite.log' returned non-zero exit status 1.
+2025-03-04 21:00:19,460 [INFO] Deleting test directory: D:\fio_test
+2025-03-04 21:00:19,461 [INFO] Test directory deleted successfully.
+2025-03-04 21:00:19,461 [INFO] [INFO] BitLocker off...
+2025-03-04 21:00:24,354 [INFO] [INFO] Task deleted.
+2025-03-04 21:00:24,354 [INFO] [INFO] Workflow completed successfully.
+2025-03-04 21:00:24,354 [INFO] 流程完成。
+[DEBUG] Password protector added successfully.
+2025-03-05 10:33:27,847 [INFO] 程序已以管理员权限运行。
+2025-03-05 10:33:27,847 [INFO] 程序已以管理员权限运行。
+2025-03-05 10:33:27,852 [INFO] [INFO] Detected post-reboot. Running disable BitLocker logic...
+2025-03-05 10:33:27,852 [INFO] [INFO] BitLocker unlock...
+BitLocker 驱动器加密: 配置工具版本 10.0.19041
+版权所有 (C) 2013 Microsoft Corporation。保留所有权利。
+
+请输入密码以解锁此卷: 
+密码已成功解锁卷 D:。
+2025-03-05 10:33:33,449 [INFO] FIO read write
+2025-03-05 10:33:33,449 [INFO] Running command: fio.exe --name=seqwrite --rw=write --bs=128k --size=10G --directory=D\:\fio_test --filename=testfile --iodepth=1 --output=fio_log\seqwrite.log
+fio: output file open error: No such file or directory
+2025-03-05 10:33:33,469 [ERROR] Error during sequential write: Command 'fio.exe --name=seqwrite --rw=write --bs=128k --size=10G --directory=D\:\fio_test --filename=testfile --iodepth=1 --output=fio_log\seqwrite.log' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\bitlockerTest\test_case\t_Tcg_BitLocker_23_BaseRebootIoAPL.py", line 192, in Run
+    subprocess.run(fio_command, check=True, shell=True)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\subprocess.py", line 516, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command 'fio.exe --name=seqwrite --rw=write --bs=128k --size=10G --directory=D\:\fio_test --filename=testfile --iodepth=1 --output=fio_log\seqwrite.log' returned non-zero exit status 1.
+2025-03-05 10:33:33,477 [INFO] Deleting test directory: D:\fio_test
+2025-03-05 10:33:33,478 [INFO] Test directory deleted successfully.
+2025-03-05 10:33:33,478 [INFO] [INFO] BitLocker off...
+2025-03-05 10:33:38,672 [INFO] [INFO] Task deleted.
+2025-03-05 10:33:38,672 [INFO] [INFO] Workflow completed successfully.
+2025-03-05 10:33:38,672 [INFO] 流程完成。
+[DEBUG] Password protector added successfully.
+2025-03-17 16:17:24,280 [INFO] 程序已以管理员权限运行。
+2025-03-17 16:17:24,280 [INFO] 程序已以管理员权限运行。
+2025-03-17 16:17:24,285 [INFO] [INFO] Detected post-reboot. Running disable BitLocker logic...
+2025-03-17 16:17:24,285 [INFO] [INFO] BitLocker unlock...
+BitLocker 驱动器加密: 配置工具版本 10.0.19041
+版权所有 (C) 2013 Microsoft Corporation。保留所有权利。
+
+请输入密码以解锁此卷: 
+密码已成功解锁卷 D:。
+2025-03-17 16:17:29,815 [INFO] FIO read write
+2025-03-17 16:17:29,815 [INFO] Running command: fio.exe --name=seqwrite --rw=write --bs=128k --size=10G --directory=D\:\fio_test --filename=testfile --iodepth=1 --output=fio_log\seqwrite.log
+fio: output file open error: No such file or directory
+2025-03-17 16:17:29,835 [ERROR] Error during sequential write: Command 'fio.exe --name=seqwrite --rw=write --bs=128k --size=10G --directory=D\:\fio_test --filename=testfile --iodepth=1 --output=fio_log\seqwrite.log' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\bitlockerTest\test_case\t_Tcg_BitLocker_23_BaseRebootIoAPL.py", line 192, in Run
+    subprocess.run(fio_command, check=True, shell=True)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\subprocess.py", line 516, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command 'fio.exe --name=seqwrite --rw=write --bs=128k --size=10G --directory=D\:\fio_test --filename=testfile --iodepth=1 --output=fio_log\seqwrite.log' returned non-zero exit status 1.
+2025-03-17 16:17:29,844 [INFO] Deleting test directory: D:\fio_test
+2025-03-17 16:17:29,844 [INFO] Test directory deleted successfully.
+2025-03-17 16:17:29,844 [INFO] [INFO] BitLocker off...
+2025-03-17 16:17:35,078 [INFO] [INFO] Task deleted.
+2025-03-17 16:17:35,078 [INFO] [INFO] Workflow completed successfully.
+2025-03-17 16:17:35,078 [INFO] 流程完成。
+[DEBUG] Password protector added successfully.
+2025-03-17 21:33:25,285 [INFO] 程序已以管理员权限运行。
+2025-03-17 21:33:25,286 [INFO] 程序已以管理员权限运行。
+2025-03-17 21:33:25,290 [INFO] [INFO] Detected post-reboot. Running disable BitLocker logic...
+2025-03-17 21:33:25,290 [INFO] [INFO] BitLocker unlock...
+BitLocker 驱动器加密: 配置工具版本 10.0.19041
+版权所有 (C) 2013 Microsoft Corporation。保留所有权利。
+
+请输入密码以解锁此卷: 
+错误: 此密码无法解锁卷 D:。
+2025-03-17 21:33:28,527 [INFO] FIO read write
+2025-03-17 21:33:28,535 [ERROR] 发生异常 : [WinError -2144272384] BitLocker 驱动器加密已锁定该驱动器。必须从控制面板解除此驱动器锁定。: 'D:\\'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\bitlockerTest\test_case\t_Tcg_BitLocker_23_BaseRebootIoAPL.py", line 181, in Run
+    os.makedirs(test_dir)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\os.py", line 213, in makedirs
+    makedirs(head, exist_ok=exist_ok)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\os.py", line 223, in makedirs
+    mkdir(name, mode)
+OSError: [WinError -2144272384] BitLocker 驱动器加密已锁定该驱动器。必须从控制面板解除此驱动器锁定。: 'D:\\'
+2025-03-17 21:33:28,544 [INFO] 流程完成。
+[DEBUG] Failed to add password protector.
+[DEBUG] Return code: 2150694951
+2025-03-17 21:47:46,573 [INFO] 程序已以管理员权限运行。
+2025-03-17 21:47:46,574 [INFO] 程序已以管理员权限运行。
+2025-03-17 21:47:46,578 [INFO] [INFO] Detected post-reboot. Running disable BitLocker logic...
+2025-03-17 21:47:46,578 [INFO] [INFO] BitLocker unlock...
+BitLocker 驱动器加密: 配置工具版本 10.0.19041
+版权所有 (C) 2013 Microsoft Corporation。保留所有权利。
+
+错误: 发生了一个错误(代码 0x80070057):
+参数错误。
+^C2025-03-18 10:03:43,183 [INFO] 程序已以管理员权限运行。
+2025-03-18 10:03:43,183 [INFO] 程序已以管理员权限运行。
+2025-03-18 10:03:43,188 [INFO] [INFO] Detected post-reboot. Running disable BitLocker logic...
+2025-03-18 10:03:43,188 [INFO] [INFO] BitLocker unlock...
+BitLocker 驱动器加密: 配置工具版本 10.0.19041
+版权所有 (C) 2013 Microsoft Corporation。保留所有权利。
+
+请输入密码以解锁此卷: 
+密码已成功解锁卷 D:。
+2025-03-18 10:03:48,951 [INFO] FIO read write
+2025-03-18 10:03:48,951 [INFO] Running command: fio.exe --name=seqwrite --rw=write --bs=128k --size=10G --directory=D\:\fio_test --filename=testfile --iodepth=1 --output=fio_log\seqwrite.log
+fio: output file open error: No such file or directory
+2025-03-18 10:03:48,974 [ERROR] Error during sequential write: Command 'fio.exe --name=seqwrite --rw=write --bs=128k --size=10G --directory=D\:\fio_test --filename=testfile --iodepth=1 --output=fio_log\seqwrite.log' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\bitlockerTest\test_case\t_Tcg_BitLocker_23_BaseRebootIoAPL.py", line 192, in Run
+    subprocess.run(fio_command, check=True, shell=True)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\subprocess.py", line 516, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command 'fio.exe --name=seqwrite --rw=write --bs=128k --size=10G --directory=D\:\fio_test --filename=testfile --iodepth=1 --output=fio_log\seqwrite.log' returned non-zero exit status 1.
+2025-03-18 10:03:48,983 [INFO] Deleting test directory: D:\fio_test
+2025-03-18 10:03:48,984 [INFO] Test directory deleted successfully.
+2025-03-18 10:03:48,984 [INFO] [INFO] BitLocker off...
+2025-03-18 10:03:54,537 [INFO] [INFO] Task deleted.
+2025-03-18 10:03:54,538 [INFO] [INFO] Workflow completed successfully.
+2025-03-18 10:03:54,538 [INFO] 流程完成。
+[DEBUG] Password protector added successfully.
+2025-03-24 15:47:47,078 [INFO] 程序已以管理员权限运行。
+2025-03-24 15:47:47,078 [INFO] 程序已以管理员权限运行。
+2025-03-24 15:47:47,083 [INFO] [INFO] Detected post-reboot. Running disable BitLocker logic...
+2025-03-24 15:47:47,083 [INFO] [INFO] BitLocker unlock...
+BitLocker 驱动器加密: 配置工具版本 10.0.19041
+版权所有 (C) 2013 Microsoft Corporation。保留所有权利。
+
+请输入密码以解锁此卷: 
+密码已成功解锁卷 D:。
+2025-03-24 15:47:52,754 [INFO] FIO read write
+2025-03-24 15:47:52,754 [INFO] Running command: fio.exe --name=seqwrite --rw=write --bs=128k --size=10G --directory=D\:\fio_test --filename=testfile --iodepth=1 --output=fio_log\seqwrite.log
+fio: output file open error: No such file or directory
+2025-03-24 15:47:52,774 [ERROR] Error during sequential write: Command 'fio.exe --name=seqwrite --rw=write --bs=128k --size=10G --directory=D\:\fio_test --filename=testfile --iodepth=1 --output=fio_log\seqwrite.log' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\bitlockerTest\test_case\t_Tcg_BitLocker_23_BaseRebootIoAPL.py", line 192, in Run
+    subprocess.run(fio_command, check=True, shell=True)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\subprocess.py", line 516, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command 'fio.exe --name=seqwrite --rw=write --bs=128k --size=10G --directory=D\:\fio_test --filename=testfile --iodepth=1 --output=fio_log\seqwrite.log' returned non-zero exit status 1.
+2025-03-24 15:47:52,783 [INFO] Deleting test directory: D:\fio_test
+2025-03-24 15:47:52,783 [INFO] Test directory deleted successfully.
+2025-03-24 15:47:52,783 [INFO] [INFO] BitLocker off...
+2025-03-24 15:47:57,553 [INFO] [INFO] Task deleted.
+2025-03-24 15:47:57,553 [INFO] [INFO] Workflow completed successfully.
+2025-03-24 15:47:57,554 [INFO] 流程完成。
+[DEBUG] Password protector added successfully.
+2025-03-27 16:52:22,226 [INFO] 程序已以管理员权限运行。
+2025-03-27 16:52:22,226 [INFO] 程序已以管理员权限运行。
+2025-03-27 16:52:22,230 [INFO] [INFO] Detected post-reboot. Running disable BitLocker logic...
+2025-03-27 16:52:22,231 [INFO] [INFO] BitLocker unlock...
+BitLocker 驱动器加密: 配置工具版本 10.0.19041
+版权所有 (C) 2013 Microsoft Corporation。保留所有权利。
+
+请输入密码以解锁此卷: 
+密码已成功解锁卷 D:。
+2025-03-27 16:52:27,926 [INFO] FIO read write
+2025-03-27 16:52:27,926 [INFO] Running command: fio.exe --name=seqwrite --rw=write --bs=128k --size=10G --directory=D\:\fio_test --filename=testfile --iodepth=1 --output=fio_log\seqwrite.log
+fio: output file open error: No such file or directory
+2025-03-27 16:52:27,945 [ERROR] Error during sequential write: Command 'fio.exe --name=seqwrite --rw=write --bs=128k --size=10G --directory=D\:\fio_test --filename=testfile --iodepth=1 --output=fio_log\seqwrite.log' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\bitlockerTest\test_case\t_Tcg_BitLocker_23_BaseRebootIoAPL.py", line 192, in Run
+    subprocess.run(fio_command, check=True, shell=True)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\subprocess.py", line 516, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command 'fio.exe --name=seqwrite --rw=write --bs=128k --size=10G --directory=D\:\fio_test --filename=testfile --iodepth=1 --output=fio_log\seqwrite.log' returned non-zero exit status 1.
+2025-03-27 16:52:27,961 [INFO] Deleting test directory: D:\fio_test
+2025-03-27 16:52:27,962 [INFO] Test directory deleted successfully.
+2025-03-27 16:52:27,962 [INFO] [INFO] BitLocker off...
+2025-03-27 16:52:32,014 [INFO] [INFO] Task deleted.
+2025-03-27 16:52:32,015 [INFO] [INFO] Workflow completed successfully.
+2025-03-27 16:52:32,015 [INFO] 流程完成。
+[DEBUG] Password protector added successfully.
+2025-04-03 17:41:41,815 [INFO] 程序已以管理员权限运行。
+2025-04-03 17:41:41,815 [INFO] 程序已以管理员权限运行。
+2025-04-03 17:41:41,819 [INFO] [INFO] Detected post-reboot. Running disable BitLocker logic...
+2025-04-03 17:41:41,819 [INFO] [INFO] BitLocker unlock...
+BitLocker 驱动器加密: 配置工具版本 10.0.19041
+版权所有 (C) 2013 Microsoft Corporation。保留所有权利。
+
+请输入密码以解锁此卷: 
+密码已成功解锁卷 D:。
+2025-04-03 17:41:47,273 [INFO] FIO read write
+2025-04-03 17:41:47,273 [INFO] Running command: fio.exe --name=seqwrite --rw=write --bs=128k --size=10G --directory=D\:\fio_test --filename=testfile --iodepth=1 --output=fio_log\seqwrite.log
+fio: output file open error: No such file or directory
+2025-04-03 17:41:47,297 [ERROR] Error during sequential write: Command 'fio.exe --name=seqwrite --rw=write --bs=128k --size=10G --directory=D\:\fio_test --filename=testfile --iodepth=1 --output=fio_log\seqwrite.log' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\bitlockerTest\test_case\t_Tcg_BitLocker_23_BaseRebootIoAPL.py", line 192, in Run
+    subprocess.run(fio_command, check=True, shell=True)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\subprocess.py", line 516, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command 'fio.exe --name=seqwrite --rw=write --bs=128k --size=10G --directory=D\:\fio_test --filename=testfile --iodepth=1 --output=fio_log\seqwrite.log' returned non-zero exit status 1.
+2025-04-03 17:41:47,313 [INFO] Deleting test directory: D:\fio_test
+2025-04-03 17:41:47,313 [INFO] Test directory deleted successfully.
+2025-04-03 17:41:47,313 [INFO] [INFO] BitLocker off...
+2025-04-03 17:41:51,380 [INFO] [INFO] Task deleted.
+2025-04-03 17:41:51,380 [INFO] [INFO] Workflow completed successfully.
+2025-04-03 17:41:51,380 [INFO] 流程完成。
+[DEBUG] Password protector added successfully.
+2025-04-07 13:26:22,023 [INFO] 程序已以管理员权限运行。
+2025-04-07 13:26:22,023 [INFO] 程序已以管理员权限运行。
+2025-04-07 13:26:22,026 [INFO] [INFO] Detected post-reboot. Running disable BitLocker logic...
+2025-04-07 13:26:22,026 [INFO] [INFO] BitLocker unlock...
+BitLocker 驱动器加密: 配置工具版本 10.0.19041
+版权所有 (C) 2013 Microsoft Corporation。保留所有权利。
+
+请输入密码以解锁此卷: 
+密码已成功解锁卷 D:。
+2025-04-07 13:26:27,829 [INFO] FIO read write
+2025-04-07 13:26:27,829 [INFO] Running command: fio.exe --name=seqwrite --rw=write --bs=128k --size=10G --directory=D\:\fio_test --filename=testfile --iodepth=1 --output=fio_log\seqwrite.log
+fio: output file open error: No such file or directory
+2025-04-07 13:26:27,854 [ERROR] Error during sequential write: Command 'fio.exe --name=seqwrite --rw=write --bs=128k --size=10G --directory=D\:\fio_test --filename=testfile --iodepth=1 --output=fio_log\seqwrite.log' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\bitlockerTest\test_case\t_Tcg_BitLocker_23_BaseRebootIoAPL.py", line 192, in Run
+    subprocess.run(fio_command, check=True, shell=True)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\subprocess.py", line 516, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command 'fio.exe --name=seqwrite --rw=write --bs=128k --size=10G --directory=D\:\fio_test --filename=testfile --iodepth=1 --output=fio_log\seqwrite.log' returned non-zero exit status 1.
+2025-04-07 13:26:27,869 [INFO] Deleting test directory: D:\fio_test
+2025-04-07 13:26:27,869 [INFO] Test directory deleted successfully.
+2025-04-07 13:26:27,869 [INFO] [INFO] BitLocker off...
+2025-04-07 13:26:32,198 [INFO] [INFO] Task deleted.
+2025-04-07 13:26:32,198 [INFO] [INFO] Workflow completed successfully.
+2025-04-07 13:26:32,198 [INFO] 流程完成。
+[DEBUG] Password protector added successfully.
+2025-04-07 19:03:21,084 [INFO] 程序已以管理员权限运行。
+2025-04-07 19:03:21,084 [INFO] 程序已以管理员权限运行。
+2025-04-07 19:03:21,088 [INFO] [INFO] Detected post-reboot. Running disable BitLocker logic...
+2025-04-07 19:03:21,088 [INFO] [INFO] BitLocker unlock...
+BitLocker 驱动器加密: 配置工具版本 10.0.19041
+版权所有 (C) 2013 Microsoft Corporation。保留所有权利。
+
+请输入密码以解锁此卷: 
+密码已成功解锁卷 D:。
+2025-04-07 19:03:25,746 [INFO] FIO read write
+2025-04-07 19:03:25,746 [INFO] Running command: fio.exe --name=seqwrite --rw=write --bs=128k --size=10G --directory=D\:\fio_test --filename=testfile --iodepth=1 --output=fio_log\seqwrite.log
+fio: output file open error: No such file or directory
+2025-04-07 19:03:25,770 [ERROR] Error during sequential write: Command 'fio.exe --name=seqwrite --rw=write --bs=128k --size=10G --directory=D\:\fio_test --filename=testfile --iodepth=1 --output=fio_log\seqwrite.log' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\bitlockerTest\test_case\t_Tcg_BitLocker_23_BaseRebootIoAPL.py", line 192, in Run
+    subprocess.run(fio_command, check=True, shell=True)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\subprocess.py", line 516, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command 'fio.exe --name=seqwrite --rw=write --bs=128k --size=10G --directory=D\:\fio_test --filename=testfile --iodepth=1 --output=fio_log\seqwrite.log' returned non-zero exit status 1.
+2025-04-07 19:03:25,785 [INFO] Deleting test directory: D:\fio_test
+2025-04-07 19:03:25,785 [INFO] Test directory deleted successfully.
+2025-04-07 19:03:25,785 [INFO] [INFO] BitLocker off...
+2025-04-07 19:03:27,924 [INFO] [INFO] Task deleted.
+2025-04-07 19:03:27,924 [INFO] [INFO] Workflow completed successfully.
+2025-04-07 19:03:27,924 [INFO] 流程完成。
+[DEBUG] Password protector added successfully.
+2025-04-07 20:39:10,486 [INFO] 程序已以管理员权限运行。
+2025-04-07 20:39:10,487 [INFO] 程序已以管理员权限运行。
+2025-04-07 20:39:10,490 [INFO] [INFO] Detected post-reboot. Running disable BitLocker logic...
+2025-04-07 20:39:10,490 [INFO] [INFO] BitLocker unlock...
+BitLocker 驱动器加密: 配置工具版本 10.0.19041
+版权所有 (C) 2013 Microsoft Corporation。保留所有权利。
+
+请输入密码以解锁此卷: 
+密码已成功解锁卷 D:。
+2025-04-07 20:39:15,499 [INFO] FIO read write
+2025-04-07 20:39:15,499 [INFO] Running command: fio.exe --name=seqwrite --rw=write --bs=128k --size=10G --directory=D\:\fio_test --filename=testfile --iodepth=1 --output=fio_log\seqwrite.log
+fio: output file open error: No such file or directory
+2025-04-07 20:39:15,524 [ERROR] Error during sequential write: Command 'fio.exe --name=seqwrite --rw=write --bs=128k --size=10G --directory=D\:\fio_test --filename=testfile --iodepth=1 --output=fio_log\seqwrite.log' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\bitlockerTest\test_case\t_Tcg_BitLocker_23_BaseRebootIoAPL.py", line 192, in Run
+    subprocess.run(fio_command, check=True, shell=True)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\subprocess.py", line 516, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command 'fio.exe --name=seqwrite --rw=write --bs=128k --size=10G --directory=D\:\fio_test --filename=testfile --iodepth=1 --output=fio_log\seqwrite.log' returned non-zero exit status 1.
+2025-04-07 20:39:15,539 [INFO] Deleting test directory: D:\fio_test
+2025-04-07 20:39:15,539 [INFO] Test directory deleted successfully.
+2025-04-07 20:39:15,539 [INFO] [INFO] BitLocker off...
+2025-04-07 20:39:18,205 [INFO] [INFO] Task deleted.
+2025-04-07 20:39:18,206 [INFO] [INFO] Workflow completed successfully.
+2025-04-07 20:39:18,206 [INFO] 流程完成。
+[DEBUG] Password protector added successfully.

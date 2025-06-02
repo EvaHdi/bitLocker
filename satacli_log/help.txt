@@ -1,0 +1,114 @@
+Copyright 2022 - Longsys. All Rights Reserved.
+
+satacli - version:1.1.10 Nov 17 2023 17:03:13
+Usage:satacli disk cmd [options]
+Options:
+   general:
+   -F, FEATURE(SECTOR COUNT for NCQ)                                 (default=0)
+   -L, LBA                                                           (default=0)
+   -C, COUNT(SECTOR COUNT for NNCQ)                                  (default=1)
+   -D, DEVICE                                                        (default=0x40)
+   -P, write data pattern                                            (0-0xFF,default=0)
+   -s, send data file                                                (default=512)
+   -r, receive data file                                             (default=NULL)
+   -l, send or receive data length                                   (default=512)
+   -v, data validation                                               (0:not verify, 1:verify, 2:flush and verify, default=0) 
+   -c, check condition                                               (0:close, 1:open, default=0)
+   -i, scsi cdb length                                               (0:16, 1:32, default=0)
+   -t, timeout(second)                                               (default=10)
+   -o, opcode(only for custom command)                               (default=0xFF)
+   -d, data flow(only for custom command)                            (0:none, 1:DMA IN, 2:DMA OUT, default=0) 
+   -p, print the details
+
+   only for DATA SET MANAGEMENT:
+   -f, data format
+       LBA1:length1,LBA2:length2...LBAn:lengthn
+       LBA and length must be hex data
+   only for SECURITY:
+   -id,  SECURITY IDENTIFIER                                        (user/master,default=user)
+   -pw,  SECURITY PASSWORD field(32 bytes)                          (string,default=0)
+   -mpi, SECURITY MASTER PASSWORD IDENTIFIER field(2 bytes)         (0-0xFFFF,default=0)
+   -mpc, SECURITY MASTER PASSWORD CAPABILITY                        (high/max,default=high)
+   -em,  SECURITY ERASE MODE                                        (normal/enhanced,default=normal)
+
+0x00 NOP                                       satacli disk nop 
+0x06 DATA SET MANAGEMENT                       satacli disk dsm -f "LBA1:length1,LBA2:length2..."
+0x07 DATA SET MANAGEMENT XL                    satacli disk dsmxl -f "LBA1:length1,LBA2:length2..."
+0x08 DEVICE RESET                              satacli disk dr 
+0x0b REQUEST SENSE DATA EXT                    satacli disk rqsd 
+0x10 RECALIBRATE                               satacli disk rb 
+0x20 READ SECTOR                               satacli disk rs -L x -C x -r x
+0x21 READ SECTOR WITHOUT RETRIES               satacli disk rsw -L x -C x -r x
+0x24 READ SECTOR EXT                           satacli disk rse -L x -C x -r x
+0x25 READ DMA EXT                              satacli disk rde -L x -C x -r x
+0x27 READ NATIVE MAX ADDRESS EXT               satacli disk rnme 
+0x29 READ MULTIPLE EXT                         satacli disk rme -L x -C x -r x
+0x2a READ STREAM DMA EXT                       satacli disk rstde -L x -C x -r x
+0x2b READ STREAM EXT                           satacli disk rste -L x -C x -r x
+0x2f READ LOG EXT                              satacli disk rl -L x -C x -r x
+0x30 WRITE SECTOR                              satacli disk ws -L x -C x -s x
+0x34 WRITE SECTOR EXT                          satacli disk wse -L x -C x -s x
+0x35 WRITE DMA EXT                             satacli disk wde -L x -C x -s x
+0x37 SET MAX ADDRESS EXT                       satacli disk sme -L x -C x
+0x39 WRITE MULTIPLE EXT                        satacli disk wme -L x -C x -s x
+0x3a WRITE STREAM DMA EXT                      satacli disk wstde -F x -C x -L x -s x
+0x3b WRITE STREAM EXT                          satacli disk wste -F x -C x -L x -s x
+0x3d WRITE DMA FUA EXT                         satacli disk wdfe -L x -C x -s x
+0x3f WRITE LOG EXT                             satacli disk wl satacli dev wl -L x -C x -s x
+0x40 READ VERIFY SECTOR                        satacli disk rvs -L x -C x
+0x42 READ VERIFY SECTOR EXT                    satacli disk rvse -L x -C x
+0x45 WRITE UNCORRECTABLE EXT                   satacli disk wue -F x -L x -C x
+0x47 READ LOG DMA EXT                          satacli disk rld -L x -C x -r x
+0x51 CONFIGURE STREAM                          satacli disk cs -F x -C x
+0x57 WRITE LOG DMA EXT                         satacli disk wld -L x -C x -s x
+0x5b TRUSTED NONE-DATA                         satacli disk tnd -F x -L x
+0x5c TRUSTED RECEIVE                           satacli disk tr -F x -C x -L x -r x
+0x5d TRUSTED RECEIVE DMA                       satacli disk trd -F x -C x -L x -r x
+0x5e TRUSTED SEND                              satacli disk ts -F x -C x -L x -s x
+0x5f TRUSTED SEND DMA                          satacli disk tsd -F x -C x -L x -s x
+0x60 READ FPDMA QUEUED                         satacli disk rfq -F x -L x -C x -r x
+0x61 WRITE FPDMA QUEUED                        satacli disk wfq -F x -L x -C x -s x
+0x63 NCQ QUEUE MANAGEMENT                      satacli disk ncqm -F x -L x -C x
+0x64 SEND FPDMA QUEUED                         satacli disk sfq -F x -L x -C x -s x
+0x65 RECEIVE FPDMA QUEUED                      satacli disk refq -F x -C x -r x
+0x70 SEEK                                      satacli disk seek -L x
+0x77 SET DATE TIME EXT                         satacli disk sdt -L x
+0x78 ACCESSIBLE MAX ADDRESS CONFIGURATION      satacli disk amac -F x -L x
+0x90 EXECUTE DEVICE DIAGNOSTIC                 satacli disk edd 
+0x91 INITIALIZE DEVICE PARAMETERS              satacli disk idp -L x -C x
+0x92 DOWNLOAD MICROCODE                        satacli disk dm -F x -L x -C x -s x
+0x93 DOWNLOAD MICROCODE DMA                    satacli disk dmd -F x -L x -C x -s x
+0xa1 IDENTIFY PACKET DEVICE                    satacli disk ipd -r x
+0xb0 SMART CMD                                 satacli disk smart -F x -L 0xC24F00
+0xb1 DEVICE CONFIGURATION OVERLAY              satacli disk dco -F x
+0xb4 SANITIZE DEVICE                           satacli disk sd -F x -L x -C x
+0xc4 READ MULTIPLE                             satacli disk rm -L x -C x -r x
+0xc5 WRITE MULTIPLE                            satacli disk wm -L x -C x -s x
+0xc6 SET MULTIPLE MODE                         satacli disk smm -C x
+0xc8 READ DMA                                  satacli disk rd -L x -C x -r x
+0xca WRITE DMA                                 satacli disk wd -L x -C x -s x
+0xce WRITE MULTIPLE FUA EXT                    satacli disk wmfe -L x -C x -s x
+0xe0 STANDBY IMMEDIATE                         satacli disk stbi 
+0xe1 IDLE IMMEDIATE                            satacli disk ii 
+0xe2 STANDBY                                   satacli disk stb 
+0xe3 IDLE                                      satacli disk idle 
+0xe4 READ BUFFER                               satacli disk rbuf -r x
+0xe5 CHECK POWER MODE                          satacli disk cpm 
+0xe6 SLEEP                                     satacli disk sl 
+0xe7 FLUSH CACHE                               satacli disk fc 
+0xe8 WRITE BUFFER                              satacli disk wbuf -s x
+0xe9 READ BUFFER DMA                           satacli disk rbd -s x
+0xea FLUSH CACHE EXT                           satacli disk fce 
+0xeb WRITE BUFFER DMA                          satacli disk wbd -s x
+0xec IDENTIFY DEVICE                           satacli disk id -r x 
+0xef SET FEATURES                              satacli disk sf -F x -L x -C x
+0xf1 SECURITY SET PASSWROD                     satacli disk ssp -id x -pw x [-mpc x -mpi x]
+0xf2 SECURITY UNLOCK                           satacli disk su -id x -pw x
+0xf3 SECURITY ERASE PREPARE                    satacli disk sep 
+0xf4 SECURITY ERASE UNIT                       satacli disk seu -id x -pw x [-em x]
+0xf5 SECURITY FREEZE LOCK                      satacli disk sfl 
+0xf6 SECURITY DISABLE PASSWORD                 satacli disk sdp -id x -pw x
+0xf8 READ NATIVE MAX ADDRESS                   satacli disk rnm 
+0xf9 SET MAX ADDRESS                           satacli disk sm -F x -L x -C x
+0xff CUSTOM DMA COMMAND                        satacli disk cc -o x -d x -L x -C x -F x
+

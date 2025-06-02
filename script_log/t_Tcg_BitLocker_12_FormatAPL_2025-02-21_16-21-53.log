@@ -1,0 +1,12 @@
+2025-02-21 16:21:53,998 [INFO] 程序已以管理员权限运行。
+2025-02-21 16:21:53,998 [INFO] step 0: delay power off
+2025-02-21 16:21:53,999 [INFO] step 1 Format
+2025-02-21 16:22:14,279 [INFO] step 2: status check
+2025-02-21 16:22:14,305 [INFO] current_transition_state : 错误代码 136: Invalid or unsupported disk \\.\PhysicalDrive0
+2025-02-21 16:22:14,305 [INFO] 识盘命令输出：
+2025-02-21 16:22:14,427 [INFO] smart_log : 错误代码 1: 
+2025-02-21 16:22:15,432 [INFO] 识盘命令输出：
+2025-02-21 16:22:15,493 [INFO] smart_log : 错误代码 1: 
+2025-02-21 16:22:16,506 [INFO] 识盘命令输出：
+2025-02-21 16:22:16,570 [INFO] smart_log : 错误代码 1: 
+2025-02-21 16:22:17,583 [INFO] 识盘命令输出：

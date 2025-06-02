@@ -1,0 +1,6 @@
+2025-03-27 16:54:22,151 [INFO] 程序已以管理员权限运行。
+2025-03-27 16:54:22,153 [INFO] [INFO] Step 1: start reboot.
+2025-03-27 16:54:22,180 [INFO] [INFO] Task created successfully.
+2025-03-27 16:54:22,181 [INFO] Batch file generated and placed in startup directory: C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp\run_script.bat
+2025-03-27 16:54:22,181 [INFO] [INFO] System will now reboot...
+2025-03-27 16:54:24,222 [INFO] 流程完成。

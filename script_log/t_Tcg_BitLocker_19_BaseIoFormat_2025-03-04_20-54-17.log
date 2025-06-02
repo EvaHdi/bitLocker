@@ -1,0 +1,73 @@
+2025-03-04 20:54:17,639 [INFO] 程序已以管理员权限运行。
+2025-03-04 20:54:17,640 [INFO] new volume
+2025-03-04 20:54:38,027 [INFO] Scanning for Opal compliant disks
+\\.\PhysicalDrive0  2      RSYE3839S-480G                           SP301011
+\\.\PhysicalDrive1 No       
+No more disks present ending scan
+2025-03-04 20:54:38,027 [INFO] step 1: status check
+2025-03-04 20:54:38,071 [INFO] BitLocker 驱动器加密: 配置工具版本 10.0.19041
+版权所有 (C) 2013 Microsoft Corporation。保留所有权利。
+
+卷 D: []
+[数据卷]
+
+    大小:              447.12 GB
+    BitLocker 版本:    无
+    转换状态:          完全解密
+    已加密百分比:      0.0%
+    加密方法:          无
+    保护状态:          保护关闭
+    锁定状态:          已解锁
+    标识字段:          无
+    自动解锁:          已禁用
+    密钥保护器:        找不到
+2025-03-04 20:54:38,072 [INFO] disk_current_status : {'BitLocker 驱动器加密': '配置工具版本 10.0.19041', '卷 D': '[]', '大小': '447.12 GB', 'BitLocker 版本': '无', '转换状态': '完全解密', '已加密百分比': '0.0%', '加密方法': '无', '保护状态': '保护关闭', '锁定状态': '已解锁', '标识字段': '无', '自动解锁': '已禁用', '密钥保护器': '找不到'}
+2025-03-04 20:54:38,072 [INFO] FIO read write
+2025-03-04 20:54:38,072 [INFO] Running command: fio.exe --name=seqwrite --rw=write --bs=128k --size=10G --directory=D\:\fio_test --filename=testfile --iodepth=1 --output=fio_log\seqwrite.log
+2025-03-04 20:54:53,902 [INFO] Sequential write completed successfully.
+2025-03-04 20:54:53,902 [INFO] step 2: bitlocker on
+2025-03-04 20:55:09,060 [INFO] key: {password}
+2025-03-04 20:55:10,129 [INFO] disk_current_status : {'BitLocker 驱动器加密': '配置工具版本 10.0.19041', '卷 D': '[]', '大小': '447.12 GB', 'BitLocker 版本': '无', '转换状态': '完全解密', '已加密百分比': '0.0%', '加密方法': '无', '保护状态': '保护关闭', '锁定状态': '已解锁', '标识字段': '无', '自动解锁': '已禁用', '密钥保护器': '找不到'}
+2025-03-04 20:55:10,129 [INFO] step 3: bitlocker add password
+2025-03-04 20:55:15,985 [INFO] step 4: bitlocker change password
+2025-03-04 20:55:22,842 [INFO] step 5: bitlocker lock
+2025-03-04 20:55:26,665 [INFO] BitLocker 驱动器加密: 配置工具版本 10.0.19041
+版权所有 (C) 2013 Microsoft Corporation。保留所有权利。
+
+卷 D: 现在已锁定
+2025-03-04 20:55:27,751 [INFO] current_locked_state : 已锁定
+2025-03-04 20:55:27,751 [INFO] step 6: read and write after disk locked
+2025-03-04 20:55:27,751 [ERROR] 写入失败，错误信息：[Errno 22] Invalid argument: 'D://test_file.txt'
+Traceback (most recent call last):
+  File "t_Tcg_BitLocker_19_BaseIoFormat.py", line 87, in verify_locked
+    with open(test_file, "w") as file:
+OSError: [Errno 22] Invalid argument: 'D://test_file.txt'
+2025-03-04 20:55:27,752 [ERROR] 读取失败，错误信息：[WinError -2144272384] BitLocker 驱动器加密已锁定该驱动器。必须从控制面板解除此驱动器锁定。: 'D://'
+Traceback (most recent call last):
+  File "t_Tcg_BitLocker_19_BaseIoFormat.py", line 100, in verify_locked
+    files = os.listdir(drive_letter)
+OSError: [WinError -2144272384] BitLocker 驱动器加密已锁定该驱动器。必须从控制面板解除此驱动器锁定。: 'D://'
+2025-03-04 20:55:27,752 [ERROR] 写入失败，错误信息：[Errno 22] Invalid argument: 'D://test_file.txt'
+Traceback (most recent call last):
+  File "t_Tcg_BitLocker_19_BaseIoFormat.py", line 87, in verify_locked
+    with open(test_file, "w") as file:
+OSError: [Errno 22] Invalid argument: 'D://test_file.txt'
+2025-03-04 20:55:27,752 [ERROR] 读取失败，错误信息：[WinError -2144272384] BitLocker 驱动器加密已锁定该驱动器。必须从控制面板解除此驱动器锁定。: 'D://'
+Traceback (most recent call last):
+  File "t_Tcg_BitLocker_19_BaseIoFormat.py", line 100, in verify_locked
+    files = os.listdir(drive_letter)
+OSError: [WinError -2144272384] BitLocker 驱动器加密已锁定该驱动器。必须从控制面板解除此驱动器锁定。: 'D://'
+2025-03-04 20:55:27,753 [INFO] D: 已被锁定。
+2025-03-04 20:55:27,753 [INFO] step 7: bitlocker unlock
+2025-03-04 20:55:33,357 [INFO] current_locked_state : 已解锁
+2025-03-04 20:55:33,357 [INFO] step 8: bitlocker off
+2025-03-04 20:55:39,654 [INFO] current_transition_state : 完全解密
+2025-03-04 20:55:39,655 [INFO] step 9: bitlocker on again
+2025-03-04 20:55:54,960 [INFO] key: 215886-417692-100562-187583-101827-245113-457611-264242
+2025-03-04 20:55:54,961 [INFO] step 10: bitlocker off
+2025-03-04 20:56:01,173 [INFO] current_transition_state : 完全解密
+2025-03-04 20:56:01,174 [INFO] step 11: format
+2025-03-04 20:56:21,562 [INFO] Scanning for Opal compliant disks
+\\.\PhysicalDrive0  2      RSYE3839S-480G                           SP301011
+\\.\PhysicalDrive1 No       
+No more disks present ending scan

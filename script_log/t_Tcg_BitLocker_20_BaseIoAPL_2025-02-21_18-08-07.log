@@ -1,0 +1,89 @@
+2025-02-21 18:08:07,113 [INFO] 程序已以管理员权限运行。
+2025-02-21 18:08:07,113 [INFO] new volume
+2025-02-21 18:08:27,451 [INFO] Scanning for Opal compliant disks
+\\.\PhysicalDrive0  2      RSYE3839S-3840                           SP30100B
+\\.\PhysicalDrive1 No       
+No more disks present ending scan
+2025-02-21 18:08:27,451 [INFO] step 1: status check
+2025-02-21 18:08:27,501 [INFO] BitLocker 驱动器加密: 配置工具版本 10.0.19041
+版权所有 (C) 2013 Microsoft Corporation。保留所有权利。
+
+卷 D: []
+[数据卷]
+
+    大小:              3576.97 GB
+    BitLocker 版本:    无
+    转换状态:          完全解密
+    已加密百分比:      0.0%
+    加密方法:          无
+    保护状态:          保护关闭
+    锁定状态:          已解锁
+    标识字段:          无
+    自动解锁:          已禁用
+    密钥保护器:        找不到
+2025-02-21 18:08:27,502 [INFO] disk_current_status : {'BitLocker 驱动器加密': '配置工具版本 10.0.19041', '卷 D': '[]', '大小': '3576.97 GB', 'BitLocker 版本': '无', '转换状态': '完全解密', '已加密百分比': '0.0%', '加密方法': '无', '保护状态': '保护关闭', '锁定状态': '已解锁', '标识字段': '无', '自动解锁': '已禁用', '密钥保护器': '找不到'}
+2025-02-21 18:08:27,503 [INFO] FIO read write
+2025-02-21 18:08:27,503 [INFO] Running command: fio.exe --name=seqwrite --rw=write --bs=128k --size=10G --directory=D\:\fio_test --filename=testfile --iodepth=1 --output=fio_log\seqwrite.log
+2025-02-21 18:08:43,020 [INFO] Sequential write completed successfully.
+2025-02-21 18:08:43,021 [INFO] step 2: bitlocker on
+2025-02-21 18:08:58,608 [INFO] key: {password}
+2025-02-21 18:08:59,671 [INFO] disk_current_status : {'BitLocker 驱动器加密': '配置工具版本 10.0.19041', '卷 D': '[]', '大小': '3576.97 GB', 'BitLocker 版本': '无', '转换状态': '完全解密', '已加密百分比': '0.0%', '加密方法': '无', '保护状态': '保护关闭', '锁定状态': '已解锁', '标识字段': '无', '自动解锁': '已禁用', '密钥保护器': '找不到'}
+2025-02-21 18:08:59,671 [INFO] step 3: bitlocker add password
+2025-02-21 18:09:05,428 [INFO] step 4: bitlocker change password
+2025-02-21 18:09:12,300 [INFO] step 5: bitlocker lock
+2025-02-21 18:09:16,183 [INFO] BitLocker 驱动器加密: 配置工具版本 10.0.19041
+版权所有 (C) 2013 Microsoft Corporation。保留所有权利。
+
+卷 D: 现在已锁定
+2025-02-21 18:09:17,260 [INFO] current_locked_state : 已锁定
+2025-02-21 18:09:17,260 [INFO] step 6: read and write after disk locked
+2025-02-21 18:09:17,263 [ERROR] 写入失败，错误信息：[Errno 22] Invalid argument: 'D://test_file.txt'
+Traceback (most recent call last):
+  File "t_Tcg_BitLocker_20_BaseIoAPL.py", line 91, in verify_locked
+    with open(test_file, "w") as file:
+OSError: [Errno 22] Invalid argument: 'D://test_file.txt'
+2025-02-21 18:09:17,266 [ERROR] 读取失败，错误信息：[WinError -2144272384] BitLocker 驱动器加密已锁定该驱动器。必须从控制面板解除此驱动器锁定。: 'D://'
+Traceback (most recent call last):
+  File "t_Tcg_BitLocker_20_BaseIoAPL.py", line 104, in verify_locked
+    files = os.listdir(drive_letter)
+OSError: [WinError -2144272384] BitLocker 驱动器加密已锁定该驱动器。必须从控制面板解除此驱动器锁定。: 'D://'
+2025-02-21 18:09:17,269 [ERROR] 写入失败，错误信息：[Errno 22] Invalid argument: 'D://test_file.txt'
+Traceback (most recent call last):
+  File "t_Tcg_BitLocker_20_BaseIoAPL.py", line 91, in verify_locked
+    with open(test_file, "w") as file:
+OSError: [Errno 22] Invalid argument: 'D://test_file.txt'
+2025-02-21 18:09:17,271 [ERROR] 读取失败，错误信息：[WinError -2144272384] BitLocker 驱动器加密已锁定该驱动器。必须从控制面板解除此驱动器锁定。: 'D://'
+Traceback (most recent call last):
+  File "t_Tcg_BitLocker_20_BaseIoAPL.py", line 104, in verify_locked
+    files = os.listdir(drive_letter)
+OSError: [WinError -2144272384] BitLocker 驱动器加密已锁定该驱动器。必须从控制面板解除此驱动器锁定。: 'D://'
+2025-02-21 18:09:17,272 [INFO] D: 已被锁定。
+2025-02-21 18:09:17,272 [INFO] step 7: bitlocker unlock
+2025-02-21 18:09:23,238 [INFO] current_locked_state : 已解锁
+2025-02-21 18:09:23,239 [INFO] step 8: bitlocker off
+2025-02-21 18:09:29,799 [INFO] current_transition_state : 完全解密
+2025-02-21 18:09:29,800 [INFO] step 9: bitlocker on again
+2025-02-21 18:09:45,294 [INFO] key: 461934-556391-317020-222794-028886-190058-617683-483054
+2025-02-21 18:09:45,294 [INFO] step 10: bitlocker off
+2025-02-21 18:09:51,809 [INFO] current_transition_state : 完全解密
+2025-02-21 18:09:51,810 [INFO] step 11: APL
+2025-02-21 18:09:51,814 [INFO] delay power off
+2025-02-21 18:09:51,816 [INFO] 识盘命令输出：
+2025-02-21 18:09:51,878 [INFO] smart_log : 
+2025-02-21 18:09:52,878 [INFO] 识盘命令输出：
+2025-02-21 18:09:52,950 [INFO] smart_log : 
+2025-02-21 18:09:53,958 [INFO] 识盘命令输出：
+2025-02-21 18:09:54,687 [INFO] smart_log : 错误代码 2: 
+2025-02-21 18:09:55,692 [INFO] 识盘命令输出：
+2025-02-21 18:09:55,750 [INFO] smart_log : 错误代码 1: 
+2025-02-21 18:09:56,764 [INFO] 识盘命令输出：
+2025-02-21 18:09:56,825 [INFO] smart_log : 错误代码 1: 
+2025-02-21 18:09:57,836 [INFO] 识盘命令输出：
+2025-02-21 18:09:57,899 [INFO] smart_log : 错误代码 1: 
+2025-02-21 18:09:58,906 [INFO] 识盘命令输出：
+2025-02-21 18:09:58,966 [INFO] smart_log : 错误代码 1: 
+2025-02-21 18:09:59,968 [INFO] 识盘命令输出：
+2025-02-21 18:10:00,029 [INFO] smart_log : 错误代码 1: 
+2025-02-21 18:10:01,040 [INFO] 识盘命令输出：
+2025-02-21 18:10:01,098 [INFO] smart_log : 错误代码 1: 
+2025-02-21 18:10:02,111 [INFO] 等待5秒后开始上电

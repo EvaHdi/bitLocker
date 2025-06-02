@@ -1,0 +1,178 @@
+2025-01-02 20:16:05,102 [INFO] 程序已以管理员权限运行。
+2025-01-02 20:16:05,103 [INFO] 程序已以管理员权限运行。
+2025-01-02 20:16:05,103 [INFO] [INFO] Detected post-reboot. Running disable BitLocker logic...
+BitLocker 驱动器加密: 配置工具版本 10.0.19041
+版权所有 (C) 2013 Microsoft Corporation。保留所有权利。
+
+请输入密码以解锁此卷: 
+密码已成功解锁卷 D:。
+2025-01-02 20:16:09,304 [INFO] Step 2: FIO read write
+2025-01-02 20:16:09,304 [INFO] Running command: fio.exe --name=seqwrite --rw=write --bs=128k --size=10G --directory=D\:\fio_test --filename=testfile --iodepth=1 --output=fio_log\seqwrite.log
+fio: output file open error: No such file or directory
+2025-01-02 20:16:09,372 [ERROR] Error during sequential write: Command 'fio.exe --name=seqwrite --rw=write --bs=128k --size=10G --directory=D\:\fio_test --filename=testfile --iodepth=1 --output=fio_log\seqwrite.log' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\code\bitlockerTest\test_case\t_Tcg_BitLocker_22_BaseRebootIoFormat.py", line 185, in Run
+    subprocess.run(fio_command, check=True, shell=True)
+  File "C:\Users\ESSD\AppData\Local\Programs\Python\Python38\lib\subprocess.py", line 516, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command 'fio.exe --name=seqwrite --rw=write --bs=128k --size=10G --directory=D\:\fio_test --filename=testfile --iodepth=1 --output=fio_log\seqwrite.log' returned non-zero exit status 1.
+2025-01-02 20:16:15,174 [INFO] [INFO] Task deleted.
+2025-01-02 20:16:15,174 [INFO] step 3: Format
+
+Microsoft DiskPart 版本 10.0.19041.3636
+
+Copyright (C) Microsoft Corporation.
+在计算机上: DESKTOP-3I4KHM4
+
+DISKPART> 
+  磁盘 ###  状态           大小     可用     Dyn  Gpt
+  --------  -------------  -------  -------  ---  ---
+  磁盘 0    联机              447 GB      0 B        *
+  磁盘 1    联机              476 GB      0 B        *
+
+DISKPART> 
+磁盘 0 现在是所选磁盘。
+
+DISKPART> 
+DiskPart 成功地清除了磁盘。
+
+DISKPART> 
+DiskPart 已将所选磁盘成功地转更换为 GPT 格式。
+
+DISKPART> 
+DiskPart 成功地创建了指定分区。
+
+DISKPART> 
+    0 百分比已完成    0 百分比已完成    0 百分比已完成  100 百分比已完成
+
+DiskPart 成功格式化该卷。
+
+DISKPART> 
+DiskPart 成功地分配了驱动器号或装载点。
+
+DISKPART> 
+  分区 ###       类型              大小     偏移量
+  -------------  ----------------  -------  -------
+  分区      1    保留                  15 MB    17 KB
+* 分区      2    主要                 447 GB    16 MB
+
+DISKPART> 
+  磁盘 ###  状态           大小     可用     Dyn  Gpt
+  --------  -------------  -------  -------  ---  ---
+* 磁盘 0    联机              447 GB      0 B        *
+  磁盘 1    联机              476 GB      0 B        *
+
+DISKPART> 
+退出 DiskPart...
+2025-01-02 20:16:35,493 [INFO] [INFO] Workflow completed successfully.
+2025-01-02 20:16:35,493 [INFO] 流程完成。
+[DEBUG] Password protector added successfully.
+[DEBUG] Command: diskpart
+[DEBUG] Starting subprocess...
+[DEBUG] Subprocess started, simulating password input...
+2025-01-07 15:24:30,201 [INFO] 程序已以管理员权限运行。
+2025-01-07 15:24:30,201 [INFO] 程序已以管理员权限运行。
+2025-01-07 15:24:30,201 [INFO] [INFO] Detected post-reboot. Running disable BitLocker logic...
+BitLocker 驱动器加密: 配置工具版本 10.0.19041
+版权所有 (C) 2013 Microsoft Corporation。保留所有权利。
+
+请输入密码以解锁此卷: 
+错误: 此密码无法解锁卷 D:。
+2025-01-07 15:26:13,311 [INFO] Step 2: FIO read write
+2025-01-07 15:26:13,312 [ERROR] 发生异常 : [WinError -2144272384] BitLocker 驱动器加密已锁定该驱动器。必须从控制面板解除此驱动器锁定。: 'D:\\'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\code\bitlockerTest\test_case\t_Tcg_BitLocker_22_BaseRebootIoFormat.py", line 174, in Run
+    os.makedirs(test_dir)
+  File "C:\Users\ESSD\AppData\Local\Programs\Python\Python38\lib\os.py", line 213, in makedirs
+    makedirs(head, exist_ok=exist_ok)
+  File "C:\Users\ESSD\AppData\Local\Programs\Python\Python38\lib\os.py", line 223, in makedirs
+    mkdir(name, mode)
+OSError: [WinError -2144272384] BitLocker 驱动器加密已锁定该驱动器。必须从控制面板解除此驱动器锁定。: 'D:\\'
+2025-01-07 15:26:13,313 [INFO] 流程完成。
+[DEBUG] Failed to add password protector.
+[DEBUG] Return code: 2150694951
+2025-03-27 17:04:38,989 [INFO] 程序已以管理员权限运行。
+2025-03-27 17:04:38,989 [INFO] 程序已以管理员权限运行。
+2025-03-27 17:04:38,994 [INFO] [INFO] Detected post-reboot. Running disable BitLocker logic...
+BitLocker 驱动器加密: 配置工具版本 10.0.19041
+版权所有 (C) 2013 Microsoft Corporation。保留所有权利。
+
+请输入密码以解锁此卷: 
+密码已成功解锁卷 D:。
+2025-03-27 17:04:43,850 [INFO] Step 2: FIO read write
+2025-03-27 17:04:43,850 [INFO] Running command: fio.exe --name=seqwrite --rw=write --bs=128k --size=10G --directory=D\:\fio_test --filename=testfile --iodepth=1 --output=fio_log\seqwrite.log
+fio: output file open error: No such file or directory
+2025-03-27 17:04:43,868 [ERROR] Error during sequential write: Command 'fio.exe --name=seqwrite --rw=write --bs=128k --size=10G --directory=D\:\fio_test --filename=testfile --iodepth=1 --output=fio_log\seqwrite.log' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\bitlockerTest\test_case\t_Tcg_BitLocker_22_BaseRebootIoFormat.py", line 188, in Run
+    subprocess.run(fio_command, check=True, shell=True)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\subprocess.py", line 516, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command 'fio.exe --name=seqwrite --rw=write --bs=128k --size=10G --directory=D\:\fio_test --filename=testfile --iodepth=1 --output=fio_log\seqwrite.log' returned non-zero exit status 1.
+2025-03-27 17:04:49,104 [INFO] [INFO] Task deleted.
+2025-03-27 17:04:49,105 [INFO] step 3: Format
+
+Microsoft DiskPart 版本 10.0.19041.964
+
+Copyright (C) Microsoft Corporation.
+在计算机上: DESKTOP-T0F813I
+
+DISKPART> 
+  磁盘 ###  状态           大小     可用     Dyn  Gpt
+  --------  -------------  -------  -------  ---  ---
+  磁盘 0    联机             3576 GB      0 B        *
+  磁盘 1    联机              476 GB  1024 KB        *
+
+DISKPART> 
+磁盘 0 现在是所选磁盘。
+
+DISKPART> 
+DiskPart 成功地清除了磁盘。
+
+DISKPART> 
+DiskPart 已将所选磁盘成功地转更换为 GPT 格式。
+
+DISKPART> 
+DiskPart 成功地创建了指定分区。
+
+DISKPART> 
+    0 百分比已完成    0 百分比已完成    0 百分比已完成    0 百分比已完成    0 百分比已完成    0 百分比已完成    0 百分比已完成    0 百分比已完成    0 百分比已完成    0 百分比已完成    0 百分比已完成    0 百分比已完成    0 百分比已完成    0 百分比已完成    0 百分比已完成  100 百分比已完成
+
+DiskPart 成功格式化该卷。
+
+DISKPART> 
+DiskPart 成功地分配了驱动器号或装载点。
+
+DISKPART> 
+  分区 ###       类型              大小     偏移量
+  -------------  ----------------  -------  -------
+  分区      1    保留                  15 MB    17 KB
+* 分区      2    主要                3576 GB    16 MB
+
+DISKPART> 
+  磁盘 ###  状态           大小     可用     Dyn  Gpt
+  --------  -------------  -------  -------  ---  ---
+* 磁盘 0    联机             3576 GB      0 B        *
+  磁盘 1    联机              476 GB  1024 KB        *
+
+DISKPART> 
+退出 DiskPart...
+2025-03-27 17:05:09,405 [INFO] [INFO] Workflow completed successfully.
+2025-03-27 17:05:09,405 [INFO] 流程完成。
+[DEBUG] Password protector added successfully.
+[DEBUG] Command: diskpart
+[DEBUG] Starting subprocess...
+[DEBUG] Subprocess started, simulating password input...
+2025-04-03 16:58:49,173 [INFO] 程序已以管理员权限运行。
+2025-04-03 16:58:49,174 [INFO] 程序已以管理员权限运行。
+2025-04-03 16:58:49,212 [INFO] 错误代码 4294967295: 
+2025-04-03 16:58:49,212 [INFO] [INFO] Initial run. Running enable BitLocker logic...
+2025-04-03 16:58:49,237 [INFO] step 1: status check
+2025-04-03 16:58:49,259 [INFO] 错误代码 4294967295: 
+2025-04-03 16:58:49,260 [ERROR] 发生异常 : '加密方法'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\bitlockerTest\test_case\t_Tcg_BitLocker_22_BaseRebootIoFormat.py", line 217, in Run
+    disk_current_status = self.bitlocker_status_to_dict(output)["加密方法"]
+KeyError: '加密方法'
+2025-04-03 16:58:49,260 [INFO] 流程完成。
+state.get: None

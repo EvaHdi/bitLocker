@@ -1,0 +1,8 @@
+smartctl 7.4 2023-08-01 r5530 [x86_64-w64-mingw32-w10-21H1] (sf-7.4-1)
+Copyright (C) 2002-23, Bruce Allen, Christian Franke, www.smartmontools.org
+
+/dev/sda: Unable to detect device type
+Please specify device type with the -d option.
+
+Use smartctl -h to get a usage summary
+

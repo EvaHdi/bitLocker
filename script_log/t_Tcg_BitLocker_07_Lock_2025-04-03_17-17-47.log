@@ -1,0 +1,7 @@
+2025-04-03 17:17:47,928 [INFO] 程序已以管理员权限运行。
+2025-04-03 17:17:47,928 [INFO] step 1: bitlocker lock
+2025-04-03 17:17:49,392 [INFO] BitLocker 驱动器加密: 配置工具版本 10.0.19041
+版权所有 (C) 2013 Microsoft Corporation。保留所有权利。
+
+卷 D: 现在已锁定
+2025-04-03 17:17:50,459 [INFO] current_locked_state : 已锁定
